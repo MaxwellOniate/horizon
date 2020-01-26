@@ -3,6 +3,7 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxMLfnsUS5Cuq36gxbHdSNtyqhsAxFK0c&callback=initMap" async defer></script>
 </body>
 
 </html>

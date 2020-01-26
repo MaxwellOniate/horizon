@@ -75,7 +75,7 @@ $page = 'Home';
   </div>
 </section>
 
-<section id="features" class="py-3">
+<section id="features" class="py-5">
   <div class="container">
     <div class="row">
 
@@ -253,7 +253,7 @@ $page = 'Home';
   </div>
 </section>
 
-<div class="promo py-3">
+<div class="promo">
   <div class="container">
     <div class="promo-content">
       <p>Special Offers on Villa Long Term Rentals & Lease Agreements</p>
@@ -262,7 +262,7 @@ $page = 'Home';
   </div>
 </div>
 
-<section id="locations" class="py-3">
+<section id="locations" class="py-5">
   <div class="container">
     <div class="row">
       <div class="col-lg-7 my-3">
@@ -314,15 +314,76 @@ $page = 'Home';
   </div>
 </section>
 
-<section id="get-quote" class="py-3">
+
+<section id="info-tabs" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="home-headquarters">
+      <div class="col-md-8">
+
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#why-us" data-toggle="tab" class="nav-link">
+              Why Us?
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#properties" data-toggle="tab" class="nav-link active">
+              Properties
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#legal" data-toggle="tab" class="nav-link">
+              Legal
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane fade" id="why-us" role="tabpanel">
+
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          </div>
+
+          <div class="tab-pane fade show active" id="properties" role="tabpanel">
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          </div>
+
+          <div class="tab-pane fade" id="legal" role="tabpanel">
+            <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+          </div>
 
         </div>
+
       </div>
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <h3>Top Builders</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="home-contact" class="py-5">
+  <div class="row no-gutters">
+    <div class="col-lg-3">
+      <div class="home-headquarters">
+        <h3>Our Headquarters</h3>
+        <div class="address">
+          <h4>North America:</h4>
+          <p>795 Folsom Ave, Suite 600 San Francisco, CA 94107.</p>
+          <p><strong>Phone:</strong> 555-555-555</p>
+          <p><strong>Email:</strong> contact@horizon.com</p>
+        </div>
+        <div class="hours">
+          <h4>Working Hours:</h4>
+          <p><strong>Mon-Fri:</strong> 10AM to 6PM</p>
+          <p><strong>Saturday:</strong> 11AM to 3PM</p>
+          <p><strong>Sunday:</strong> Closed</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4">
+      <div class="home-contact-form">
+        <h3>Get A Quick Quote</h3>
         <form action="">
           <div class="form-group">
             <input type="text" name="full-name" class="form-control" placeholder="Full Name">
@@ -336,14 +397,16 @@ $page = 'Home';
           <div class="form-group">
             <textarea name="message" class="form-control" placeholder="What are you Looking for? (Ex: Villa on the Beach)"></textarea>
           </div>
-          <input type="submit" name="submit" value="Submit" class="btn btn-success">
+          <input type="submit" name="submit" value="Submit" class="btn btn-light">
         </form>
       </div>
-
     </div>
-
+    <div class="col-lg-5">
+      <div class="map"></div>
+    </div>
   </div>
 </section>
+
 
 
 <?php require('inc/footer.php'); ?>

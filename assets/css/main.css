@@ -107,7 +107,7 @@ p {
     right: 0;
     background: rgba(0, 0, 0, 0.2); }
   #home .search-form {
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column; }
     #home .search-form .search-tab {
@@ -132,7 +132,7 @@ p {
   padding: 1rem 0; }
   #features .media i {
     font-size: 3rem;
-    padding: 0 1rem;
+    padding-right: 1rem;
     color: #1abc9c; }
   #features .media .media-body h3 {
     font-size: 16px;
@@ -199,3 +199,43 @@ p {
 
 #locations a:hover .overlay {
   background: rgba(0, 0, 0, 0.4); }
+
+#info-tabs .nav-item .nav-link {
+  border-radius: 0;
+  padding: 0.5rem 5rem;
+  font-weight: bold;
+  font-size: 14px; }
+
+#info-tabs .nav-item .nav-link.active {
+  border-top: 3px solid #1abc9c; }
+
+#info-tabs .tab-content {
+  padding: 2rem 0; }
+
+#home-contact .home-headquarters {
+  background: #f4f4f4;
+  padding: 2rem; }
+  #home-contact .home-headquarters h4 {
+    font-size: 15px; }
+  #home-contact .home-headquarters p {
+    margin: 0; }
+  #home-contact .home-headquarters .address,
+  #home-contact .home-headquarters .hours {
+    margin: 1rem 0; }
+
+#home-contact .home-contact-form {
+  background: #1abc9c;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #home-contact .home-contact-form h3 {
+    align-self: flex-start;
+    color: #fff; }
+  #home-contact .home-contact-form form {
+    width: 100%; }
+
+#home-contact .map {
+  width: 100%;
+  height: 100%; }
