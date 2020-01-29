@@ -1,0 +1,276 @@
+@media (max-width: 990px) {
+  #main-nav {
+    background: #2c3e50; }
+    #main-nav .navbar-brand {
+      margin: 0 auto; }
+    #main-nav #main-nav-links .nav-link {
+      padding: 0.75rem;
+      border-bottom: 1px solid #666; }
+    #main-nav #main-nav-links .nav-item:last-child .nav-link {
+      border-bottom: none; }
+  #home .search-form {
+    margin-top: 4.5rem; } }
+
+.california {
+  background: url("../img/cities/4.jpg") no-repeat center center/cover; }
+
+.new-york {
+  background: url("../img/cities/2.jpg") no-repeat center center/cover; }
+
+.san-francisco {
+  background: url("../img/cities/3.jpg") no-repeat center center/cover; }
+
+.texas {
+  background: url("../img/cities/1.jpg") no-repeat center center/cover; }
+
+.new-orleans {
+  background: url("../img/cities/5.jpg") no-repeat center center/cover; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+  margin: 0 0 1.9rem 0;
+  text-transform: uppercase; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+  a:hover {
+    text-decoration: none;
+    color: #555; }
+
+a,
+label {
+  font-family: 'Rubik', sans-serif; }
+
+label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 10px;
+  cursor: pointer; }
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.8; }
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase; }
+
+.divider {
+  background: #ccc;
+  height: 1px;
+  width: 100%; }
+
+.center, .center-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .center-row {
+    flex-direction: row; }
+
+#main-nav.scrolled {
+  transition: background 300ms linear;
+  background: #2c3e50; }
+
+#main-nav {
+  transition: background 300ms linear; }
+  #main-nav .navbar-brand {
+    font-size: 2rem; }
+  #main-nav-links a {
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 1rem;
+    line-height: 22px;
+    letter-spacing: 1px; }
+
+#home {
+  min-height: 100vh;
+  background: url("../img/hero/1.jpg") no-repeat center center/cover; }
+  #home .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2); }
+  #home .search-form {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column; }
+    #home .search-form .search-tab {
+      z-index: 1;
+      color: #fff;
+      align-self: flex-start;
+      background: #f0ad4e;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 0; }
+    #home .search-form form {
+      border-top: 5px solid #f0ad4e;
+      background: #fff;
+      padding: 1.88rem;
+      opacity: 0.95; }
+
+#features hr {
+  border-top-width: 2px; }
+
+#features .media {
+  padding: 1rem 0; }
+  #features .media i {
+    font-size: 3rem;
+    padding-right: 1rem;
+    color: #1abc9c; }
+  #features .media .media-body h3 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    color: #333; }
+  #features .media .media-body p {
+    color: #999; }
+
+#features .featured-properties .card-title {
+  font-size: 21px; }
+
+#features .featured-properties p {
+  color: #999;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem; }
+
+#features .featured-properties .list-group-item {
+  border: none;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0; }
+
+.promo .promo-content {
+  background: #1abc9c;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .promo .promo-content p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif; }
+  .promo .promo-content .btn {
+    color: #fff;
+    background: #f0ad4e;
+    transition: all 200ms linear; }
+    .promo .promo-content .btn:hover {
+      background: #e49d3a; }
+
+#locations a .location-img {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  object-fit: cover; }
+  #locations a .location-img .overlay {
+    transition: all 200ms linear;
+    background: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%; }
+    #locations a .location-img .overlay p {
+      text-align: center;
+      font-size: 1.5rem;
+      width: 100%;
+      position: absolute;
+      color: #fff;
+      font-family: 'Rubik', sans-serif; }
+      #locations a .location-img .overlay p span {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem; }
+
+#locations a:hover .overlay {
+  background: rgba(0, 0, 0, 0.4); }
+
+#info-tabs .nav-item .nav-link {
+  border-radius: 0;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 14px; }
+
+#info-tabs .nav-item .nav-link.active {
+  border-top: 3px solid #1abc9c; }
+
+#info-tabs .tab-content {
+  padding: 2rem 0; }
+
+#info-tabs .top-builders .logos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  #info-tabs .top-builders .logos img {
+    padding: 1rem;
+    border: 1px solid #eee; }
+
+#home-contact .home-headquarters {
+  background: #f4f4f4;
+  padding: 2rem; }
+  #home-contact .home-headquarters h4 {
+    font-size: 15px; }
+  #home-contact .home-headquarters p {
+    margin: 0; }
+  #home-contact .home-headquarters .address,
+  #home-contact .home-headquarters .hours {
+    margin: 1rem 0; }
+
+#home-contact .home-contact-form {
+  background: #1abc9c;
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #home-contact .home-contact-form h3 {
+    align-self: flex-start;
+    color: #fff; }
+  #home-contact .home-contact-form form {
+    width: 100%; }
+
+#home-contact .map {
+  width: 100%;
+  height: 100%; }
+
+#main-footer {
+  color: #ccc;
+  background: #2c3e50; }
+  #main-footer h2 {
+    font-size: 1.5rem; }
+  #main-footer hr {
+    border-top: 1px solid #666; }
+  #main-footer a {
+    color: #ccc; }
+  #main-footer .social-media-icons {
+    margin-bottom: 1.5rem; }
+    #main-footer .social-media-icons a {
+      margin-right: 1rem; }
+      #main-footer .social-media-icons a:hover {
+        opacity: 0.8; }
+      #main-footer .social-media-icons a i {
+        width: 40px;
+        height: 40px;
+        padding: 1rem;
+        color: #fff;
+        border-radius: 50%; }
+      #main-footer .social-media-icons a i.fa-facebook-f {
+        background: #3b5998; }
+      #main-footer .social-media-icons a i.fa-twitter {
+        background: #1da1f2; }
+      #main-footer .social-media-icons a i.fa-instagram {
+        background: #c13584; }
+      #main-footer .social-media-icons a i.fa-linkedin {
+        background: #0e76a8; }

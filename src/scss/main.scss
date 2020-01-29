@@ -1,0 +1,346 @@
+@import '_responsive';
+
+$primary-color: #1abc9c;
+$secondary-color: #f0ad4e;
+
+// LOCATION IMAGES
+.california {
+  background: url('../img/cities/4.jpg') no-repeat center center/cover;
+}
+.new-york {
+  background: url('../img/cities/2.jpg') no-repeat center center/cover;
+}
+.san-francisco {
+  background: url('../img/cities/3.jpg') no-repeat center center/cover;
+}
+.texas {
+  background: url('../img/cities/1.jpg') no-repeat center center/cover;
+}
+.new-orleans {
+  background: url('../img/cities/5.jpg') no-repeat center center/cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1.5;
+  margin: 0 0 1.9rem 0;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  &:hover {
+    text-decoration: none;
+    color: #555;
+  }
+}
+
+a,
+label {
+  font-family: 'Rubik', sans-serif;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+}
+
+.divider {
+  background: #ccc;
+  height: 1px;
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &-row {
+    @extend .center;
+    flex-direction: row;
+  }
+}
+
+#main-nav.scrolled {
+  transition: background 300ms linear;
+  background: #2c3e50;
+}
+
+#main-nav {
+  transition: background 300ms linear;
+  .navbar-brand {
+    font-size: 2rem;
+  }
+  &-links {
+    a {
+      text-transform: uppercase;
+      font-size: 13px;
+      padding: 1rem;
+      line-height: 22px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+#home {
+  min-height: 100vh;
+  background: url('../img/hero/1.jpg') no-repeat center center/cover;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  .search-form {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    .search-tab {
+      z-index: 1;
+      color: #fff;
+      align-self: flex-start;
+      background: $secondary-color;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    form {
+      border-top: 5px solid $secondary-color;
+      background: #fff;
+      padding: 1.88rem;
+      opacity: 0.95;
+    }
+  }
+}
+
+#features {
+  hr {
+    border-top-width: 2px;
+  }
+  .media {
+    padding: 1rem 0;
+    i {
+      font-size: 3rem;
+      padding-right: 1rem;
+      color: $primary-color;
+    }
+    .media-body {
+      h3 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        margin-bottom: 0.5rem;
+        color: #333;
+      }
+      p {
+        color: #999;
+      }
+    }
+  }
+  .featured-properties {
+    .card-title {
+      font-size: 21px;
+    }
+    p {
+      color: #999;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 1rem;
+    }
+    .list-group-item {
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+.promo {
+  .promo-content {
+    background: $primary-color;
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-family: 'Rubik', sans-serif;
+    }
+    .btn {
+      color: #fff;
+      background: $secondary-color;
+      transition: all 200ms linear;
+      &:hover {
+        background: #e49d3a;
+      }
+    }
+  }
+}
+
+#locations {
+  a {
+    .location-img {
+      position: relative;
+      height: 250px;
+      width: 100%;
+      object-fit: cover;
+      .overlay {
+        transition: all 200ms linear;
+        background: rgba(0, 0, 0, 0.2);
+        width: 100%;
+        height: 100%;
+        p {
+          text-align: center;
+          font-size: 1.5rem;
+          width: 100%;
+          position: absolute;
+          color: #fff;
+          font-family: 'Rubik', sans-serif;
+          span {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+    &:hover {
+      .overlay {
+        background: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}
+
+#info-tabs {
+  .nav-item {
+    .nav-link {
+      border-radius: 0;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .nav-link.active {
+      border-top: 3px solid $primary-color;
+    }
+  }
+  .tab-content {
+    padding: 2rem 0;
+  }
+  .top-builders {
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      img {
+        padding: 1rem;
+        border: 1px solid #eee;
+      }
+    }
+  }
+}
+
+#home-contact {
+  .home-headquarters {
+    background: #f4f4f4;
+    padding: 2rem;
+    h4 {
+      font-size: 15px;
+    }
+    p {
+      margin: 0;
+    }
+    .address,
+    .hours {
+      margin: 1rem 0;
+    }
+  }
+  .home-contact-form {
+    background: $primary-color;
+    padding: 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      align-self: flex-start;
+      color: #fff;
+    }
+    form {
+      width: 100%;
+    }
+  }
+  .map {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#main-footer {
+  color: #ccc;
+  background: #2c3e50;
+  h2 {
+    font-size: 1.5rem;
+  }
+  hr {
+    border-top: 1px solid #666;
+  }
+  a {
+    color: #ccc;
+  }
+  .social-media-icons {
+    margin-bottom: 1.5rem;
+    a {
+      &:hover {
+        opacity: 0.8;
+      }
+      margin-right: 1rem;
+      i {
+        width: 40px;
+        height: 40px;
+        padding: 1rem;
+        color: #fff;
+        border-radius: 50%;
+      }
+      i.fa-facebook-f {
+        background: #3b5998;
+      }
+      i.fa-twitter {
+        background: #1da1f2;
+      }
+      i.fa-instagram {
+        background: #c13584;
+      }
+      i.fa-linkedin {
+        background: #0e76a8;
+      }
+    }
+  }
+}
