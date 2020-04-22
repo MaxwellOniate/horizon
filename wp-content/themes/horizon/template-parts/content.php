@@ -9,4 +9,13 @@
   <div class="entry-content">
     <?php the_content(); ?>
   </div>
+
+  <?php
+
+  if (comments_open()) {
+    comments_template();
+  }
+
+  ?>
+
 </article>
