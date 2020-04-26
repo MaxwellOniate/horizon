@@ -1,1 +1,46 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+
+#wrapper-footer {
+	background: #292929;
+	color: #666;
+	padding: 40px 0;
+	font-size: 14px;
+	line-height: 1.8;
+
+	.site-footer {
+		.breadcrumb {
+			padding: 0;
+			margin: 0;
+			background: none;
+		}
+
+		a {
+			color: #666;
+			&:hover {
+				text-decoration: none;
+				color: #777;
+			}
+		}
+
+		.site-info {
+			a {
+				padding-bottom: 0.25rem;
+				border-bottom: 1px solid #666;
+			}
+		}
+	}
+}
+
+@media (max-width: 990px) {
+	.site-info {
+		text-align: center;
+		.breadcrumb {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
