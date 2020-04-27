@@ -4,14 +4,85 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
-#wrapper-footer {
-	background: #292929;
-	color: #666;
-	padding: 40px 0;
+#main-footer {
+	color: #ccc;
 	font-size: 14px;
 	line-height: 1.8;
 
-	.site-footer {
+	#footer-top {
+		background: #333;
+		padding: 80px 0;
+
+		a {
+			color: #ccc;
+			&:hover {
+				text-decoration: none;
+				color: #888;
+			}
+		}
+
+		.footer-logo {
+			font-size: 1.5rem;
+			align-self: center;
+			margin-right: 1rem;
+			border-right: 1px solid #555;
+			padding-right: 1rem;
+		}
+
+		#footer-links {
+			border-top: 1px solid #555;
+			padding-top: 1.5rem;
+			ul {
+				padding: 0;
+				list-style: none;
+			}
+		}
+
+		.footer-contact-info {
+			span {
+				text-transform: uppercase;
+				color: #888;
+			}
+			p {
+				font-size: 1.5rem;
+				color: #eee;
+			}
+		}
+
+		.footer-share-link {
+			display: inline-block;
+			width: 40px;
+			height: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 5px;
+			margin-right: 0.5rem;
+			i {
+				font-size: 1.5rem;
+			}
+		}
+		.footer-facebook-block {
+			background: #3b5998;
+		}
+		.footer-rss-block {
+			background: #ee802f;
+		}
+		.share-link-text {
+			line-height: 1.5;
+			font-size: 11.2px;
+			span {
+				display: block;
+				font-weight: bold;
+			}
+		}
+	}
+
+	#footer-bottom {
+		color: #666;
+		background: #292929;
+		padding: 40px 0;
+
 		.breadcrumb {
 			padding: 0;
 			margin: 0;
@@ -22,7 +93,7 @@ body {
 			color: #666;
 			&:hover {
 				text-decoration: none;
-				color: #777;
+				color: #999;
 			}
 		}
 
