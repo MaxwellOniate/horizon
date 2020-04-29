@@ -1,8 +1,53 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-body {
-	font-family: "Roboto", sans-serif;
+// NAVIGATION
+
+#main-nav-contact {
+	background: #eee;
+	padding: 20px 0;
+
+	.main-nav-brand {
+		color: #555;
+		font-size: 2rem;
+		font-weight: bold;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.main-nav-contact-block {
+		i {
+			display: flex;
+			padding-right: 1rem;
+			align-self: center;
+			color: #555;
+			font-size: 2.5rem;
+		}
+	}
 }
+
+#main-menu {
+	margin: auto;
+
+	a {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 13px;
+		color: #000;
+		padding: 10px 15px;
+		&:hover {
+			color: #f18052;
+		}
+	}
+
+	.active {
+		a {
+			color: #f18052;
+		}
+	}
+}
+
+// FOOTER
 
 #main-footer {
 	color: #ccc;
@@ -106,7 +151,16 @@ body {
 	}
 }
 
+// MEDIA QUERIES
+
 @media (max-width: 990px) {
+	#main-nav-contact {
+		.brand-container {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
 	.site-info {
 		text-align: center;
 		.breadcrumb {
