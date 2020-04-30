@@ -38,7 +38,7 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="container">
 					<?php endif; ?>
 
-					<ul class="navbar-nav">
+					<ul class="navbar-nav top-social">
 
 						<li class="nav-item">
 							<a href="#" class="nav-link">
@@ -76,6 +76,18 @@ $container = get_theme_mod('understrap_container_type');
 							</a>
 						</li>
 
+					</ul>
+
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a href="#" class="nav-link">Locations</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">FAQs</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">Contact</a>
+						</li>
 					</ul>
 
 					<?php if ('container' === $container) : ?>

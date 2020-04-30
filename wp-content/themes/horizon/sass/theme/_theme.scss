@@ -11,19 +11,28 @@ body {
 	padding-bottom: 0;
 	li {
 		border-right: 1px solid #eee;
+		&:last-child {
+			border-right: none;
+		}
 		a {
+			text-transform: uppercase;
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 44px;
+			font-size: 12px;
+			&:hover {
+				background: #ddd;
+			}
+		}
+	}
+	.top-social {
+		a {
 			width: 40px;
 			&:hover {
 				color: #fff;
 				background: #555;
 			}
-		}
-		&:last-child {
-			border-right: none;
 		}
 	}
 }
@@ -204,6 +213,17 @@ body {
 		.breadcrumb {
 			display: flex;
 			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	#main-nav-top {
+		.top-social {
+			display: none;
+		}
+		.navbar-nav {
+			margin: auto;
 		}
 	}
 }
