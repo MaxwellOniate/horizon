@@ -4,6 +4,17 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+.breadcrumb {
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+
+.navbar-expand > .container {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
 // NAVIGATION
 
 #main-nav-top {
@@ -94,6 +105,8 @@ body {
 	}
 }
 
+// PAGE
+
 // FOOTER
 
 #main-footer {
@@ -174,12 +187,6 @@ body {
 		color: #666;
 		background: #292929;
 		padding: 40px 0;
-
-		.breadcrumb {
-			padding: 0;
-			margin: 0;
-			background: none;
-		}
 
 		a {
 			color: #666;
