@@ -1,4 +1,5 @@
 <?php
+
 /**
  * UnderStrap functions and definitions
  *
@@ -6,7 +7,7 @@
  */
 
 // Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
+defined('ABSPATH') || exit;
 
 $understrap_includes = array(
 	'/theme-settings.php',                  // Initialize theme default settings.
@@ -26,6 +27,13 @@ $understrap_includes = array(
 	'/deprecated.php',                      // Load deprecated functions.
 );
 
-foreach ( $understrap_includes as $file ) {
+foreach ($understrap_includes as $file) {
 	require_once get_template_directory() . '/inc' . $file;
 }
+
+function horizon_enqueue_scripts()
+{
+	wp_enqueue_style('roboto-font', 'https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+}
+
+add_action('wp_enqueue_scripts', 'horizon_enqueue_scripts');
