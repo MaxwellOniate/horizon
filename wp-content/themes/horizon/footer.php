@@ -79,8 +79,6 @@ $container = get_theme_mod('understrap_container_type');
 				</div>
 				<div class="col-sm-4 py-3">
 
-
-
 					<div class="footer-contact-info">
 						<span>Call Us:</span>
 						<p>555-555-5555</p>

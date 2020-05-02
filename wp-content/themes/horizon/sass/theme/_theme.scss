@@ -34,7 +34,7 @@ body {
 				height: 44px;
 				font-size: 12px;
 				&:hover {
-					background: #ddd;
+					background: #eee;
 				}
 			}
 		}
@@ -107,6 +107,13 @@ body {
 	}
 }
 
+// SHOWCASE
+
+#showcase {
+	height: 550px;
+	background: center top/cover no-repeat;
+}
+
 // PAGE
 
 #page-wrapper {
@@ -114,7 +121,7 @@ body {
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 	background: #f9f9f9;
-	padding: 25px 0;
+	padding: 50px 0;
 	.entry-title {
 		padding: 0;
 		margin: 0;
@@ -184,6 +191,7 @@ body {
 			border-radius: 5px;
 			margin-right: 0.5rem;
 			i {
+				color: #fff;
 				font-size: 1.5rem;
 			}
 		}
@@ -251,6 +259,23 @@ body {
 		}
 		.navbar-nav {
 			margin: auto;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	#main-nav-container {
+		#main-nav-top {
+			li {
+				.login-logout {
+					background: #ee802f;
+					color: #fff;
+					width: 100px;
+					&:hover {
+						background: #df762c;
+					}
+				}
+			}
 		}
 	}
 }
