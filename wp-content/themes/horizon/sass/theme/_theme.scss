@@ -112,6 +112,33 @@ body {
 #showcase {
 	height: 550px;
 	background: center top/cover no-repeat;
+	.container {
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.card {
+		background-color: rgba(255, 255, 255, 0.9);
+		border-radius: 2px;
+		padding: 40px;
+		max-width: 500px;
+		.card-body {
+			h1 {
+				font-size: 24px;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+				font-weight: 700;
+				line-height: 1;
+				margin-bottom: 2rem;
+			}
+			p {
+				font-size: 18px;
+				font-weight: 300;
+				margin-bottom: 0;
+				color: #555;
+			}
+		}
+	}
 }
 
 // PAGE
