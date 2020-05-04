@@ -91,17 +91,9 @@ $container = get_theme_mod('understrap_container_type');
 								<a href="#" class="nav-link">Contact</a>
 							</li>
 
-							<?php if (!is_user_logged_in()) : ?>
-								<li class="nav-item">
-									<a href="<?php echo wp_login_url(); ?>" class="nav-link login-logout">Login</a>
-								</li>
-							<?php endif; ?>
-
-							<?php if (is_user_logged_in()) : ?>
-								<li class="nav-item">
-									<a href="<?php echo wp_logout_url(); ?>" class="nav-link login-logout">Logout</a>
-								</li>
-							<?php endif; ?>
+							<li class="nav-item login-logout">
+								<?php wp_loginout(); ?>
+							</li>
 
 						</ul>
 

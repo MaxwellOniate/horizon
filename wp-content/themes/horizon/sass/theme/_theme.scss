@@ -47,6 +47,16 @@ body {
 				}
 			}
 		}
+		li.login-logout {
+			a {
+				color: rgba(0, 0, 0, 0.5);
+				padding: 0.5rem 1rem;
+				&:hover {
+					color: rgba(0, 0, 0, 0.7);
+					text-decoration: none;
+				}
+			}
+		}
 	}
 
 	#main-nav-middle {
@@ -290,15 +300,30 @@ body {
 	}
 }
 
+@media (max-width: 400px) {
+	#main-nav-container {
+		#main-nav-top {
+			.navbar-nav {
+				li {
+					a {
+						font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (min-width: 768px) {
 	#main-nav-container {
 		#main-nav-top {
-			li {
-				.login-logout {
+			li.login-logout {
+				a {
 					background: #ee802f;
 					color: #fff;
 					width: 100px;
 					&:hover {
+						color: #fff;
 						background: #df762c;
 					}
 				}
