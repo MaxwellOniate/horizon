@@ -91,8 +91,8 @@ $container = get_theme_mod('understrap_container_type');
 								<a href="#" class="nav-link">Contact</a>
 							</li>
 
-							<li class="nav-item login-logout">
-								<?php wp_loginout(); ?>
+							<li class="nav-item loginout">
+								<?php wp_loginout(get_permalink()); ?>
 							</li>
 
 						</ul>
