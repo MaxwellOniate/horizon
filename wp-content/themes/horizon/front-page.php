@@ -81,7 +81,7 @@
   </div>
 </section>
 
-<section class="home-benefits py-5">
+<section class="home-benefits pt-5">
   <div class="container">
     <div class="row">
 
@@ -149,6 +149,155 @@
     </div>
 
 
+  </div>
+</section>
+
+<section class="home-projects py-5">
+
+  <h2 class="home-projects-heading">Featured Projects</h2>
+
+  <div class="home-projects-container">
+    <div class="row no-gutters">
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/1.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+
+            <div class="card-body">
+              <h3 class="card-title">The Atmosphere</h3>
+              <span class="project-location">Chicago, USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/2.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Wavelength Structure</h3>
+              <span class="project-location">Madrid, Spain</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/3.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Greenhouse Garden</h3>
+              <span class="project-location">Baili, Indonesia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/4.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Industrial Hub</h3>
+              <span class="project-location">Beijing, China</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/5.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Corporate Headquarters</h3>
+              <span class="project-location">California, USA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/6.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Space Station</h3>
+              <span class="project-location">Moscow, Russia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/7.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bent Architecture</h3>
+              <span class="project-location">Melbourne, Australia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="project">
+          <div class="card card-min">
+            <div class="project-img">
+              <img src="<?php echo get_theme_file_uri('/img/projects/8.jpg'); ?>" alt="Building" class="card-img-top">
+              <div class="project-img-overlay">
+                <i class="fa fa-search"></i>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Lakeview Center</h3>
+              <span class="project-location">Auckland, New Zealand</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </div>
 </section>
 
