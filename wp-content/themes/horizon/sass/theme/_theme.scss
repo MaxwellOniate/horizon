@@ -7,6 +7,17 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
 .breadcrumb {
 	padding: 0;
 	margin: 0;
@@ -131,9 +142,12 @@ body {
 		margin: auto;
 
 		a {
-			text-transform: uppercase;
+			font-family: "Source Sans Pro", sans-serif;
 			font-weight: bold;
 			font-size: 13px;
+			line-height: 22px;
+			letter-spacing: 1px;
+			text-transform: uppercase;
 			color: #555;
 			padding: 10px 20px;
 			&:hover {
@@ -206,7 +220,7 @@ body {
 		}
 	}
 
-	// CALL TO ACTION
+	// HOME CALL TO ACTION
 
 	&-c2a {
 		text-transform: uppercase;
@@ -227,9 +241,9 @@ body {
 		}
 	}
 
-	// HOME DETAILS
+	// HOME SERVICES
 
-	&-details {
+	&-services {
 		.card-min {
 			.card-body {
 				.card-title {
@@ -241,6 +255,8 @@ body {
 				}
 				.card-subtitle {
 					font-size: 16px;
+					font-weight: normal;
+					text-transform: capitalize;
 					color: #f18052;
 					margin-bottom: 12px;
 				}
@@ -252,7 +268,7 @@ body {
 		}
 	}
 
-	// HOME QUOTES
+	// HOME TESTIMONIALS
 
 	&-testimonials {
 		position: relative;
@@ -275,6 +291,8 @@ body {
 				margin-bottom: 2rem;
 			}
 			&-body {
+				font-family: "Source Sans Pro", sans-serif;
+				font-weight: 300;
 				font-size: 30px;
 				letter-spacing: 1px;
 				line-height: 1.6;
@@ -284,6 +302,27 @@ body {
 			&-author {
 				font-weight: bold;
 				text-transform: uppercase;
+			}
+		}
+	}
+
+	// HOME BENEFITS
+
+	&-benefits {
+		.benefit {
+			padding: 1rem 0;
+			&-img {
+				height: 64px;
+				width: 64px;
+				margin-right: 1rem;
+			}
+			&-title {
+				font-size: 1rem;
+			}
+			&-body {
+				font-size: 14px;
+				color: #999;
+				line-height: 1.8;
 			}
 		}
 	}
@@ -390,11 +429,21 @@ body {
 
 // MEDIA QUERIES
 
-@media (max-width: 990px) {
+@media (max-width: 991px) {
 	#main-nav-middle {
 		.brand-container {
 			display: flex;
 			justify-content: center;
+		}
+	}
+
+	#main-menu {
+		.nav-item {
+			border-bottom: 1px solid #e5e5e5;
+
+			&:last-child {
+				border-bottom: none;
+			}
 		}
 	}
 
@@ -418,7 +467,7 @@ body {
 	}
 
 	.home {
-		&-details {
+		&-services {
 			.card-min {
 				margin: 2rem 0;
 			}
