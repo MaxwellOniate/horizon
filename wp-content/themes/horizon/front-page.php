@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="showcase" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/2.jpg'); ?>')">
+<section id="showcase" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/2.jpg'); ?>')">
   <div class="container">
     <div class="card">
       <div class="card-body">
@@ -10,21 +10,21 @@
     </div>
 
   </div>
-</div>
+</section>
 
-<div class="home-c2a bg-f5f5f5 py-5">
+<section class="home-c2a bg-f5f5f5 py-5">
   <div class="container d-lg-flex align-items-center justify-content-between">
     <div class="home-c2a-text">
       <h3 class="home-c2a-text-heading">Start Planning Your New Dream Home With Us</h3>
       <p class="home-c2a-text-body mb-4 mb-lg-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
-    <a href="#" class="home-c2a-btn btn btn-outline-dark btn-lg">
+    <a href="<?php echo esc_url(site_url('/contact')); ?>" class="home-c2a-btn btn btn-outline-dark btn-lg">
       Start Now
     </a>
   </div>
-</div>
+</section>
 
-<div class="home-details py-5">
+<section class="home-details py-5">
   <div class="container">
     <div class="row">
 
@@ -69,6 +69,16 @@
 
     </div>
   </div>
-</div>
+</section>
+
+<section class="home-testimonials" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/1.jpg'); ?>')">
+  <div class="overlay">
+    <div class="container center testimonial py-5">
+      <img src="<?php echo get_theme_file_uri('/img/testimonials/1.jpg') ?>" alt="Client" class="img-fluid rounded-circle testimonial-img">
+      <p class="testimonial-body">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, blanditiis!"</p>
+      <p class="testimonial-author">John Doe</p>
+    </div>
+  </div>
+</section>
 
 <?php get_footer(); ?>

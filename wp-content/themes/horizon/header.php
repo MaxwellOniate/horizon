@@ -82,13 +82,13 @@ $container = get_theme_mod('understrap_container_type');
 
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a href="#" class="nav-link">Locations</a>
+								<a href="<?php echo esc_url(site_url('/locations')); ?>" class="nav-link">Locations</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link">FAQs</a>
+								<a href="<?php echo esc_url(site_url('/faqs')); ?>" class="nav-link">FAQs</a>
 							</li>
 							<li class="nav-item">
-								<a href="#" class="nav-link">Contact</a>
+								<a href="<?php echo esc_url(site_url('/contact')); ?>" class="nav-link">Contact</a>
 							</li>
 
 							<li class="nav-item loginout">
