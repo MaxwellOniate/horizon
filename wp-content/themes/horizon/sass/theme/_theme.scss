@@ -15,11 +15,16 @@ h4,
 h5,
 h6 {
 	font-family: "Source Sans Pro", sans-serif;
-	font-weight: 600;
-
+	font-weight: 700;
 	color: #444;
 	line-height: 1.5;
+	letter-spacing: 1px;
 	text-transform: uppercase;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
 }
 
 a {
@@ -46,7 +51,6 @@ a {
 	.card-img-top {
 		border-top-left-radius: 0;
 		border-top-right-radius: 0;
-		object-fit: cover;
 	}
 	.card-body {
 		padding: 0;
@@ -240,9 +244,9 @@ a {
 // HOME PAGE
 
 .home {
-	// SHOWCASE
+	// HOME SHOWCASE
 
-	#showcase {
+	&-showcase {
 		height: 550px;
 		background: center top/cover no-repeat;
 		.container {
@@ -292,17 +296,6 @@ a {
 			border: 3px solid #000;
 			border-radius: 3px;
 			padding: 8px 26px;
-		}
-	}
-
-	// HOME SERVICES
-
-	&-services {
-		.card-min {
-			.card-img-top {
-				width: 349.99px;
-				height: 218.74px;
-			}
 		}
 	}
 
@@ -507,12 +500,33 @@ a {
 
 	&-blog {
 		.card-min {
-			.card-img-top {
-				width: 349.99px;
-				height: 195.99px;
-			}
 			.card-title {
 				text-transform: none;
+			}
+		}
+	}
+
+	// HOME POINTS
+
+	&-points {
+		.points-container {
+			h3 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 22px;
+				color: #777;
+			}
+			.points {
+				margin-top: 2rem;
+				li {
+					font-size: 17px;
+					margin: 8px 0;
+					color: #555;
+					i {
+						color: $main-clr;
+					}
+				}
 			}
 		}
 	}
@@ -548,10 +562,6 @@ a {
 		#footer-links {
 			border-top: 1px solid #555;
 			padding-top: 1.5rem;
-			ul {
-				padding: 0;
-				list-style: none;
-			}
 		}
 
 		.footer-contact-info {
