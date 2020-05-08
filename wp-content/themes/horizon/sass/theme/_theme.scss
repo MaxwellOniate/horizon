@@ -2,6 +2,7 @@
 
 $main-clr: #ee802f;
 $main-clr-dark: #df762c;
+$main-clr2: #f18052;
 
 body {
 	font-family: "Roboto", sans-serif;
@@ -21,15 +22,71 @@ h6 {
 	text-transform: uppercase;
 }
 
-.breadcrumb {
-	padding: 0;
-	margin: 0;
-	background: none;
+a {
+	color: inherit;
+	&:hover {
+		color: inherit;
+		text-decoration: none;
+	}
 }
 
 .navbar-expand > .container {
 	padding-left: 15px !important;
 	padding-right: 15px !important;
+}
+
+.breadcrumb-min {
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+
+.card-min {
+	border: none;
+	.card-img-top {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		object-fit: cover;
+	}
+	.card-body {
+		padding: 0;
+		margin-top: 1.5rem;
+		.card-title {
+			font-size: 16px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: #333;
+			a:hover {
+				color: $main-clr;
+			}
+		}
+		.card-subtitle {
+			font-size: 16px;
+			font-weight: normal;
+			text-transform: capitalize;
+			color: #f18052;
+			margin-bottom: 12px;
+		}
+		.card-meta {
+			font-size: 13px;
+			line-height: 14px;
+			color: #999;
+			font-style: italic;
+		}
+		.card-text {
+			font-size: 14px;
+			color: #999;
+		}
+	}
+}
+
+.form-control-custom {
+	padding: 8px 14px;
+	line-height: 1.42857143;
+	border: 2px solid #ddd;
+	border-radius: 0;
+	transition: border-color ease-in-out 0.15s;
 }
 
 .bg-f9f9f9 {
@@ -44,16 +101,8 @@ h6 {
 	background: $main-clr;
 }
 
-.card-min {
-	border: none;
-	.card-img-top {
-		border-top-left-radius: 0;
-		border-top-right-radius: 0;
-		margin-bottom: 1.5rem;
-	}
-	.card-body {
-		padding: 0;
-	}
+.bg-main2 {
+	background: $main-clr2;
 }
 
 .center {
@@ -250,25 +299,9 @@ h6 {
 
 	&-services {
 		.card-min {
-			.card-body {
-				.card-title {
-					font-size: 16px;
-					font-weight: 700;
-					text-transform: uppercase;
-					letter-spacing: 1px;
-					color: #333;
-				}
-				.card-subtitle {
-					font-size: 16px;
-					font-weight: normal;
-					text-transform: capitalize;
-					color: #f18052;
-					margin-bottom: 12px;
-				}
-				.card-text {
-					font-size: 14px;
-					color: #999;
-				}
+			.card-img-top {
+				width: 349.99px;
+				height: 218.74px;
 			}
 		}
 	}
@@ -386,21 +419,100 @@ h6 {
 				.card-body {
 					margin: 1.5rem 1rem;
 					.card-title {
-						display: inline-block;
-						text-transform: capitalize;
+						text-transform: none;
 						font-size: 19px;
 						margin-bottom: 0.25rem;
-						cursor: pointer;
-						&:hover {
-							color: $main-clr;
-						}
 					}
 					.project-location {
 						display: block;
-						color: #888;
+						color: #999;
 						font-size: 14px;
 					}
 				}
+			}
+		}
+	}
+
+	// HOME CALL TO ACTION 2
+	&-c2a2 {
+		background: $main-clr2;
+		text-align: center;
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 1.7rem;
+		font-weight: 300;
+		color: #f4f4f4;
+		a {
+			font-weight: bold;
+			padding-bottom: 5px;
+			border-bottom: 2px solid #f4f4f4;
+			&:hover {
+				color: #fff;
+				border-color: #fff;
+			}
+		}
+	}
+
+	// HOME INFO TABS
+
+	&-info {
+		.nav-item {
+			.nav-link {
+				font-size: 14px;
+				font-weight: bold;
+				border-radius: 0;
+				padding: 1rem;
+				color: #495057;
+				background-color: #fff;
+			}
+			.nav-link.active {
+				border-top: 3px solid $main-clr;
+			}
+		}
+		.tab-content {
+			padding: 2rem 0;
+		}
+		&-form {
+			h3 {
+				margin-bottom: 25px;
+				font-size: 1rem;
+				font-weight: 600;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+			}
+			textarea {
+				height: 5rem;
+			}
+			button {
+				display: inline-block;
+				position: relative;
+				cursor: pointer;
+				outline: none;
+				white-space: nowrap;
+				padding: 0 22px;
+				font-size: 14px;
+				height: 40px;
+				line-height: 40px;
+				background-color: $main-clr2;
+				color: #fff;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border: none;
+				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+
+	// HOME RECENT BLOGS
+
+	&-blog {
+		.card-min {
+			.card-img-top {
+				width: 349.99px;
+				height: 195.99px;
+			}
+			.card-title {
+				text-transform: none;
 			}
 		}
 	}
@@ -545,7 +657,8 @@ h6 {
 	}
 
 	.home {
-		&-services {
+		&-services,
+		&-blog {
 			.card-min {
 				margin: 2rem 0;
 			}

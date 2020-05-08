@@ -139,7 +139,7 @@ $container = get_theme_mod('understrap_container_type');
 						<span>Copyright &copy; 2017, All Rights Reserved by <?php echo bloginfo('name'); ?></span>
 
 						<nav aria-label="breadcrumb">
-							<ol class="breadcrumb">
+							<ol class="breadcrumb breadcrumb-min">
 								<li class="breadcrumb-item">
 									<a href="#">Terms of Use</a>
 								</li>
@@ -155,7 +155,7 @@ $container = get_theme_mod('understrap_container_type');
 
 				<div class="d-none col-lg-6 d-lg-flex justify-content-end">
 					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb">
+						<ol class="breadcrumb breadcrumb-min">
 							<li class="breadcrumb-item">
 								<a href="#">Home</a>
 							</li>
