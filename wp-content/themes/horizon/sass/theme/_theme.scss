@@ -245,19 +245,6 @@ a {
 	}
 }
 
-// PAGE
-
-.page-header {
-	background: #f9f9f9;
-	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
-	padding: 50px 0;
-	.page-title {
-		padding: 0;
-		margin: 0;
-	}
-}
-
 // HOME PAGE
 
 .home {
@@ -448,6 +435,25 @@ a {
 }
 
 //*** TEMPLATE PARTS
+
+// TEMPLATE PART: PAGE BANNER
+
+.page-banner {
+	background: #f9f9f9;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding: 50px 0;
+	.page-title {
+		padding: 0;
+		margin: 0;
+	}
+	.page-subtitle {
+		display: block;
+		font-size: 18px;
+		font-weight: 300;
+		color: #777;
+	}
+}
 
 // TEMPLATE PART: CALL TO ACTION
 
@@ -671,8 +677,8 @@ a {
 	}
 
 	.home {
-		&-services,
-		&-blog {
+		#services,
+		#recent-blogs {
 			.card-min {
 				margin: 2rem 0;
 			}
