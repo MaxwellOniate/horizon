@@ -18,6 +18,8 @@ get_header();
 
 $container = get_theme_mod('understrap_container_type');
 
+pageBanner();
+
 ?>
 
 <div class="wrapper" id="page-wrapper">

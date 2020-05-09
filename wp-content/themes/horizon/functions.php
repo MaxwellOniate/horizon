@@ -37,3 +37,26 @@ function horizon_enqueue_scripts()
 }
 
 add_action('wp_enqueue_scripts', 'horizon_enqueue_scripts');
+
+function pageBanner($args = NULL)
+{
+	if (!$args['title']) {
+		$args['title'] = esc_html(get_the_title());
+	}
+	if (!$args['subtitle']) {
+		$args['subtitle'] = get_field('page_banner_subtitle');
+	}
+
+?>
+	<header class="page-banner">
+		<div class="container">
+			<h1 class="page-title">
+				<?php echo $args['title'] ?>
+			</h1>
+			<span class="page-subtitle">
+				<?php echo $args['subtitle']; ?>
+			</span>
+		</div>
+	</header>
+<?php
+}
