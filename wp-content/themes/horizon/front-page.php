@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 
-<section class="home-showcase" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/2.jpg'); ?>')">
+<!-- SHOWCASE -->
+
+<section id="showcase" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/2.jpg'); ?>')">
   <div class="container">
     <div class="card">
       <div class="card-body">
@@ -12,19 +14,13 @@
   </div>
 </section>
 
-<section class="home-c2a bg-f5f5f5 py-5">
-  <div class="container d-lg-flex align-items-center justify-content-between">
-    <div class="home-c2a-text">
-      <h3 class="home-c2a-text-heading">Start Planning Your New Dream Home With Us</h3>
-      <p class="home-c2a-text-body mb-4 mb-lg-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <a href="<?php echo esc_url(site_url('/contact')); ?>" class="home-c2a-btn btn btn-outline-dark btn-lg">
-      Start Now
-    </a>
-  </div>
-</section>
+<!-- CALL TO ACTION -->
 
-<section class="home-services py-5">
+<?php get_template_part('page-templates/page', 'c2a'); ?>
+
+<!-- SERVICES -->
+
+<section id="services" class="py-5">
   <div class="container">
     <div class="row">
 
@@ -71,7 +67,9 @@
   </div>
 </section>
 
-<section class="home-testimonials py-5" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/1.jpg'); ?>')">
+<!-- TESTIMONIALS -->
+
+<section id="testimonials" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/1.jpg'); ?>')">
   <div class="overlay">
     <div class="container center testimonial">
       <img src="<?php echo get_theme_file_uri('/img/testimonials/6.jpg') ?>" alt="John Doe" class="img-fluid rounded-circle testimonial-img">
@@ -81,82 +79,17 @@
   </div>
 </section>
 
-<section class="home-benefits pt-5">
-  <div class="container">
-    <div class="row">
+<!-- BENEFITS -->
 
-      <div class="col-md-6 col-lg-4">
-        <div class="media benefit">
-          <img src="<?php echo get_theme_file_uri('/img/icons/building.png'); ?>" alt="Benefit" class="img-fluid benefit-img">
-          <div class="media-body">
-            <h3 class="benefit-title">Concrete Developments</h3>
-            <p class="benefit-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.</p>
-          </div>
-        </div>
-      </div>
+<?php get_template_part('page-templates/page', 'benefits'); ?>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="media benefit">
-          <img src="<?php echo get_theme_file_uri('/img/icons/bank.png'); ?>" alt="Benefit" class="img-fluid benefit-img">
-          <div class="media-body">
-            <h3 class="benefit-title">Financial Assistance</h3>
-            <p class="benefit-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.</p>
-          </div>
-        </div>
-      </div>
+<!-- PROJECTS -->
 
-      <div class="col-md-6 col-lg-4">
-        <div class="media benefit">
-          <img src="<?php echo get_theme_file_uri('/img/icons/drawer.png'); ?>" alt="Benefit" class="img-fluid benefit-img">
-          <div class="media-body">
-            <h3 class="benefit-title">Interior Design</h3>
-            <p class="benefit-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.</p>
-          </div>
-        </div>
-      </div>
+<section class="projects">
 
-      <div class="col-md-6 col-lg-4">
-        <div class="media benefit">
-          <img src="<?php echo get_theme_file_uri('/img/icons/paper-money.png'); ?>" alt="Benefit" class="img-fluid benefit-img">
-          <div class="media-body">
-            <h3 class="benefit-title">Cost Effective Solutions</h3>
-            <p class="benefit-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.</p>
-          </div>
-        </div>
-      </div>
+  <h2 class="projects-heading">Featured Projects</h2>
 
-      <div class="col-md-6 col-lg-4">
-        <div class="media benefit">
-          <img src="<?php echo get_theme_file_uri('/img/icons/traffic-cone.png'); ?>" alt="Benefit" class="img-fluid benefit-img">
-          <div class="media-body">
-            <h3 class="benefit-title">Smart Builders</h3>
-            <p class="benefit-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-        <div class="media benefit">
-          <img src="<?php echo get_theme_file_uri('/img/icons/paint-brush.png'); ?>" alt="Benefit" class="img-fluid benefit-img">
-          <div class="media-body">
-            <h3 class="benefit-title">Quality Infrastructure</h3>
-            <p class="benefit-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem minima, facere distinctio placeat.</p>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-
-
-  </div>
-</section>
-
-<section class="home-projects py-5">
-
-  <h2 class="home-projects-heading">Featured Projects</h2>
-
-  <div class="home-projects-container">
+  <div class="projects-container">
     <div class="row no-gutters">
 
       <div class="col-sm-6 col-md-4 col-lg-3">
@@ -331,14 +264,12 @@
     </div>
   </div>
 
-  <div class="home-c2a2 py-5">
-    <div class="container">
-      <span>Would you like to build your dream home with us? <a href="<?php echo esc_url(site_url('/contact')); ?>"><strong>Enquire here</strong></a></span>
-    </div>
-  </div>
+  <?php get_template_part('page-templates/c2a2'); ?>
 </section>
 
-<section class="home-info py-5">
+<!-- INFO -->
+
+<section class="info py-5">
   <div class="container">
     <div class="row">
 
@@ -382,7 +313,7 @@
       </div>
 
       <div class="col-md-4">
-        <form class="home-info-form">
+        <form class="info-form">
           <h3>Quick Quote Form</h3>
           <div class="form-group">
             <input type="text" class="form-control form-control-custom" placeholder="Full Name">
@@ -393,7 +324,7 @@
           <div class="form-group">
             <textarea class="form-control form-control-custom" placeholder="Message"></textarea>
           </div>
-          <button>Send Message</button>
+          <button class="main-btn">Send Message</button>
         </form>
       </div>
 
@@ -402,11 +333,14 @@
   </div>
 </section>
 
+<!-- DIVIDER -->
 <div class="container">
   <hr>
 </div>
 
-<section class="home-blog py-5">
+<!-- RECENT BLOGS -->
+
+<section id="recent-blogs" class="py-5">
   <div class="container">
     <h2 class="mb-5">Recent Blogs</h2>
     <div class="row">
@@ -474,34 +408,14 @@
   </div>
 </section>
 
+<!-- DIVIDER -->
 <div class="container">
   <hr>
 </div>
 
-<section class="home-points pt-5">
-  <div class="container">
-    <div class="row no-gutters">
+<!-- TRUST POINTS -->
 
-      <div class="d-none d-lg-block col-lg-7">
-        <img src="<?php echo get_theme_file_uri('/img/services/bottom-trust.jpg'); ?>" alt="Smiling construction guy.">
-      </div>
+<?php get_template_part('page-templates/page', 'trust-points'); ?>
 
-      <div class="center col-lg-5 pb-5">
-        <div class="points-container">
-          <h3>You're in good hands.</h3>
-          <p>Five points that define our reliability.</p>
-          <ul class="points">
-            <li><i class="fa fa-check"></i> Market leader since 1915.</li>
-            <li><i class="fa fa-check"></i> Positive results within deadlines.</li>
-            <li><i class="fa fa-check"></i> 100% Reliability & Guarantee</li>
-            <li><i class="fa fa-check"></i> Dedicated professional team of 500+</li>
-            <li><i class="fa fa-check"></i> Unmatched after project support.</li>
-          </ul>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 <?php get_footer(); ?>

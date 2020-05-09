@@ -116,6 +116,30 @@ a {
 	align-items: center;
 }
 
+.main-btn {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	white-space: nowrap;
+	padding: 0 22px;
+	font-size: 14px;
+	height: 40px;
+	line-height: 40px;
+	background-color: $main-clr2;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 3px;
+	border-bottom: 3px solid rgba(0, 0, 0, 0.15);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	&:hover {
+		opacity: 0.9;
+	}
+}
+
 // NAVIGATION
 
 #main-nav-container {
@@ -223,30 +247,23 @@ a {
 
 // PAGE
 
-#page-wrapper {
+.page-header {
 	background: #f9f9f9;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
-	background: #f9f9f9;
 	padding: 50px 0;
-	.entry-title {
+	.page-title {
 		padding: 0;
 		margin: 0;
-		line-height: 1;
-		font-weight: 600;
-		letter-spacing: 1px;
-		color: #333;
-		font-size: 28px;
-		text-transform: uppercase;
 	}
 }
 
 // HOME PAGE
 
 .home {
-	// HOME SHOWCASE
+	// SHOWCASE
 
-	&-showcase {
+	#showcase {
 		height: 550px;
 		background: center top/cover no-repeat;
 		.container {
@@ -278,30 +295,9 @@ a {
 		}
 	}
 
-	// HOME CALL TO ACTION
+	// TESTIMONIALS
 
-	&-c2a {
-		text-transform: uppercase;
-		&-text {
-			&-heading {
-				font-size: 1.5rem;
-				font-weight: bold;
-				letter-spacing: 2px;
-			}
-			&-body {
-				color: #999;
-			}
-		}
-		&-btn {
-			border: 3px solid #000;
-			border-radius: 3px;
-			padding: 8px 26px;
-		}
-	}
-
-	// HOME TESTIMONIALS
-
-	&-testimonials {
+	#testimonials {
 		position: relative;
 		background: center bottom/cover no-repeat;
 		color: #fff;
@@ -337,30 +333,9 @@ a {
 		}
 	}
 
-	// HOME BENEFITS
+	// PROJECTS
 
-	&-benefits {
-		.benefit {
-			padding: 1rem 0;
-			&-img {
-				height: 64px;
-				width: 64px;
-				margin-right: 1rem;
-			}
-			&-title {
-				font-size: 1rem;
-			}
-			&-body {
-				font-size: 14px;
-				color: #999;
-				line-height: 1.8;
-			}
-		}
-	}
-
-	// HOME PROJECTS
-
-	&-projects {
+	.projects {
 		&-heading {
 			text-align: center;
 			padding: 3rem 0;
@@ -413,6 +388,7 @@ a {
 					margin: 1.5rem 1rem;
 					.card-title {
 						text-transform: none;
+						letter-spacing: 0px;
 						font-size: 19px;
 						margin-bottom: 0.25rem;
 					}
@@ -426,28 +402,9 @@ a {
 		}
 	}
 
-	// HOME CALL TO ACTION 2
-	&-c2a2 {
-		background: $main-clr2;
-		text-align: center;
-		font-family: "Source Sans Pro", sans-serif;
-		font-size: 1.7rem;
-		font-weight: 300;
-		color: #f4f4f4;
-		a {
-			font-weight: bold;
-			padding-bottom: 5px;
-			border-bottom: 2px solid #f4f4f4;
-			&:hover {
-				color: #fff;
-				border-color: #fff;
-			}
-		}
-	}
+	// HOME INFO
 
-	// HOME INFO TABS
-
-	&-info {
+	.info {
 		.nav-item {
 			.nav-link {
 				font-size: 14px;
@@ -475,57 +432,104 @@ a {
 			textarea {
 				height: 5rem;
 			}
-			button {
-				display: inline-block;
-				position: relative;
-				cursor: pointer;
-				outline: none;
-				white-space: nowrap;
-				padding: 0 22px;
-				font-size: 14px;
-				height: 40px;
-				line-height: 40px;
-				background-color: $main-clr2;
-				color: #fff;
-				font-weight: 700;
-				text-transform: uppercase;
-				letter-spacing: 1px;
-				border: none;
-				text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-			}
 		}
 	}
 
-	// HOME RECENT BLOGS
+	// RECENT BLOGS
 
-	&-blog {
+	#recent-blogs {
 		.card-min {
 			.card-title {
 				text-transform: none;
+				letter-spacing: 0px;
 			}
 		}
 	}
+}
 
-	// HOME POINTS
+//*** TEMPLATE PARTS
 
-	&-points {
-		.points-container {
-			h3 {
-				font-size: 30px;
-			}
-			p {
-				font-size: 22px;
-				color: #777;
-			}
-			.points {
-				margin-top: 2rem;
-				li {
-					font-size: 17px;
-					margin: 8px 0;
-					color: #555;
-					i {
-						color: $main-clr;
-					}
+// TEMPLATE PART: CALL TO ACTION
+
+.c2a {
+	text-transform: uppercase;
+	&-text {
+		&-heading {
+			font-size: 1.5rem;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+		&-body {
+			color: #999;
+		}
+	}
+	&-btn {
+		border: 3px solid #000;
+		border-radius: 3px;
+		padding: 8px 26px;
+	}
+}
+
+// TEMPLATE PART: CALL TO ACTION 2
+
+.c2a2 {
+	background: $main-clr2;
+	text-align: center;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 1.7rem;
+	font-weight: 300;
+	color: #f4f4f4;
+	a {
+		font-weight: bold;
+		padding-bottom: 5px;
+		border-bottom: 2px solid #f4f4f4;
+		&:hover {
+			color: #fff;
+			border-color: #fff;
+		}
+	}
+}
+
+// TEMPLATE PART: BENEFITS
+
+.benefits {
+	.benefit {
+		padding: 1rem 0;
+		&-img {
+			height: 64px;
+			width: 64px;
+			margin-right: 1rem;
+		}
+		&-title {
+			font-size: 1rem;
+		}
+		&-body {
+			font-size: 14px;
+			color: #999;
+			line-height: 1.8;
+		}
+	}
+}
+
+// TEMPLATE PART: TRUST POINTS
+
+.trust-points {
+	.points-container {
+		h3 {
+			font-size: 30px;
+		}
+		p {
+			font-size: 22px;
+			color: #777;
+		}
+		.points {
+			margin-top: 2rem;
+			li {
+				font-size: 17px;
+				margin: 8px 0;
+				color: #555;
+				i {
+					color: $main-clr;
 				}
 			}
 		}
