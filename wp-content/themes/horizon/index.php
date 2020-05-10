@@ -22,7 +22,6 @@ pageBanner([
 	'subtitle' => 'Keep up with our latest news.'
 ]);
 
-
 $container = get_theme_mod('understrap_container_type');
 ?>
 

@@ -16,7 +16,7 @@
 
 <!-- CALL TO ACTION -->
 
-<?php get_template_part('page-templates/page', 'c2a'); ?>
+<?php get_template_part('template-parts/content', 'c2a'); ?>
 
 <!-- SERVICES -->
 
@@ -81,7 +81,7 @@
 
 <!-- BENEFITS -->
 
-<?php get_template_part('page-templates/page', 'benefits'); ?>
+<?php get_template_part('template-parts/content', 'benefits'); ?>
 
 <!-- PROJECTS -->
 
@@ -267,6 +267,10 @@
   <?php get_template_part('page-templates/c2a2'); ?>
 </section>
 
+<!-- CALL TO ACTION 2 -->
+
+<?php get_template_part('template-parts/content', 'c2a2'); ?>
+
 <!-- INFO -->
 
 <section class="info py-5">
@@ -415,7 +419,7 @@
 
 <!-- TRUST POINTS -->
 
-<?php get_template_part('page-templates/page', 'trust-points'); ?>
+<?php get_template_part('template-parts/content', 'trust-points'); ?>
 
 
 <?php get_footer(); ?>
