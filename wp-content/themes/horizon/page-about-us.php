@@ -36,6 +36,59 @@ pageBanner();
         </main><!-- #main -->
       </div>
 
+      <div class="col-lg-6">
+        <div class="gallery">
+          <div class="gallery-top">
+            <img src="<?php echo get_theme_file_uri('/img/gallery/1.jpg'); ?>" alt="Construction" class="img-fluid gallery-top-img">
+          </div>
+
+          <ul class="gallery-bottom">
+            <div class="row">
+              <div class="col-12">
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/1.jpg'); ?>" alt="Construction" class="img-fluid gallery-active-img" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/2.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/3.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/4.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/5.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/6.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+              </div>
+              <div class="col-12">
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/7.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/8.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/9.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/10.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/11.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+                <li>
+                  <img src="<?php echo get_theme_file_uri('/img/gallery/12.jpg'); ?>" alt="Construction" class="img-fluid" draggable="false">
+                </li>
+              </div>
+            </div>
+          </ul>
+
+        </div>
+      </div>
 
 
     </div>
@@ -46,7 +99,7 @@ pageBanner();
 
 <!-- ABOUT PAGE: BENEFITS -->
 
-<section id="about-benefits">
+<section class="benefits">
   <div class="row no-gutters">
     <div class="d-none d-lg-block col-lg-4">
       <img src="<?php echo get_theme_file_uri('/img/services/parallax.jpg'); ?>" alt="Construction workers lifting a piece of wooden foundation." class="img-fluid benefits-side-img">
