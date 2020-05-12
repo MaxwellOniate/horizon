@@ -2,18 +2,14 @@
 
 get_header();
 
-$container = get_theme_mod('understrap_container_type');
-
 pageBanner();
 
 ?>
 
-<!-- CONTENT -->
+<!-- MAIN CONTENT -->
 
-<div class="wrapper" id="page-wrapper">
-
-  <div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
-
+<section class="main-content py-5">
+  <div class="container">
     <div class="row">
 
       <div class="col-lg-6">
@@ -92,10 +88,8 @@ pageBanner();
 
 
     </div>
-
-  </div><!-- #content -->
-
-</div><!-- #page-wrapper -->
+  </div>
+</section>
 
 <!-- ABOUT PAGE: BENEFITS -->
 
@@ -106,6 +100,89 @@ pageBanner();
     </div>
     <div class="col-lg-8">
       <?php get_template_part('template-parts/content', 'benefits-2col'); ?>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PAGE: INFO -->
+
+<section id="about-info">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 py-5">
+        <h3 class="mb-5">Our Leaders</h3>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <div class="card card-min">
+              <img src="<?php echo get_theme_file_uri('/img/team/2.jpg') ?>" alt="Team Member" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">John Treehouse</h3>
+                <h4 class="card-subtitle">President and CEO</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-min">
+              <img src="<?php echo get_theme_file_uri('/img/team/3.jpg') ?>" alt="Team Member" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Bob Driver</h3>
+                <h4 class="card-subtitle">Vice President, Operations</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card card-min">
+              <img src="<?php echo get_theme_file_uri('/img/team/4.jpg') ?>" alt="Team Member" class="img-fluid card-img-top">
+              <div class="card-body">
+                <h3 class="card-title">Andy Phillips</h3>
+                <h4 class="card-subtitle">Vice President, Finance</h4>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="col-lg-5 py-5">
+        <h3 class="mb-5">Investors Overview</h3>
+        <p>We prize our investors more than everything else. We strive to provide quality services to all our investors on a priority basis. You are invited to join our investors list and enjoy our services. <a href="<?php echo esc_url(site_url('/investors')); ?>">See more...</a></p>
+
+        <ul class="about-investors">
+          <div class="row">
+
+            <div class="col-12">
+              <li>
+                <img src=" <?php echo get_theme_file_uri('/img/investors/2.jpg'); ?>" alt="Investor" class="img-fluid">
+              </li>
+              <li>
+                <img src=" <?php echo get_theme_file_uri('/img/investors/15.jpg'); ?>" alt="Investor" class="img-fluid">
+              </li>
+              <li>
+                <img src=" <?php echo get_theme_file_uri('/img/investors/3.jpg'); ?>" alt="Investor" class="img-fluid">
+              </li>
+            </div>
+
+            <div class="col-12">
+              <li>
+                <img src=" <?php echo get_theme_file_uri('/img/investors/4.jpg'); ?>" alt="Investor" class="img-fluid">
+              </li>
+              <li>
+                <img src=" <?php echo get_theme_file_uri('/img/investors/5.jpg'); ?>" alt="Investor" class="img-fluid">
+              </li>
+              <li>
+                <img src=" <?php echo get_theme_file_uri('/img/investors/11.jpg'); ?>" alt="Investor" class="img-fluid">
+              </li>
+            </div>
+
+          </div>
+        </ul>
+
+      </div>
     </div>
   </div>
 </section>
