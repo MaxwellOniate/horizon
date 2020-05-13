@@ -12,7 +12,7 @@ pageBanner();
   <div class="container">
     <div class="row">
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 mb-5 mb-lg-0">
         <main class="site-main" id="main">
 
           <?php while (have_posts()) : the_post(); ?>
@@ -106,10 +106,10 @@ pageBanner();
 
 <!-- ABOUT PAGE: INFO -->
 
-<section id="about-info">
+<section id="about-info" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 py-5">
+      <div class="col-lg-7 mb-5 mb-lg-0">
         <h3 class="mb-5">Our Leaders</h3>
 
         <div class="row">
@@ -146,40 +146,33 @@ pageBanner();
 
         </div>
 
-
       </div>
-      <div class="col-lg-5 py-5">
+      <div class="col-lg-5">
         <h3 class="mb-5">Clients Overview</h3>
         <p>We prize our clients more than everything else. We strive to provide quality services to all our clients on a priority basis. You are invited to join our clients list and enjoy our services.</p>
 
-        <ul class="about-clients">
-          <div class="row">
+        <ul class="clients-overview">
 
-            <div class="col-12">
-              <li>
-                <img src=" <?php echo get_theme_file_uri('/img/clients/1.png'); ?>" alt="Client" class="img-fluid">
-              </li>
-              <li>
-                <img src=" <?php echo get_theme_file_uri('/img/clients/2.png'); ?>" alt="Client" class="img-fluid">
-              </li>
-              <li>
-                <img src=" <?php echo get_theme_file_uri('/img/clients/3.png'); ?>" alt="Client" class="img-fluid">
-              </li>
-            </div>
+          <li>
+            <img src=" <?php echo get_theme_file_uri('/img/clients/1.png'); ?>" alt="Client" class="img-fluid">
+          </li>
+          <li>
+            <img src=" <?php echo get_theme_file_uri('/img/clients/2.png'); ?>" alt="Client" class="img-fluid">
+          </li>
+          <li>
+            <img src=" <?php echo get_theme_file_uri('/img/clients/3.png'); ?>" alt="Client" class="img-fluid">
+          </li>
 
-            <div class="col-12">
-              <li>
-                <img src=" <?php echo get_theme_file_uri('/img/clients/4.png'); ?>" alt="Client" class="img-fluid">
-              </li>
-              <li>
-                <img src=" <?php echo get_theme_file_uri('/img/clients/5.png'); ?>" alt="Client" class="img-fluid">
-              </li>
-              <li>
-                <img src=" <?php echo get_theme_file_uri('/img/clients/6.png'); ?>" alt="Client" class="img-fluid">
-              </li>
-            </div>
+          <li>
+            <img src=" <?php echo get_theme_file_uri('/img/clients/4.png'); ?>" alt="Client" class="img-fluid">
+          </li>
+          <li>
+            <img src=" <?php echo get_theme_file_uri('/img/clients/5.png'); ?>" alt="Client" class="img-fluid">
+          </li>
+          <li>
+            <img src=" <?php echo get_theme_file_uri('/img/clients/6.png'); ?>" alt="Client" class="img-fluid">
+          </li>
 
-          </div>
         </ul>
 
       </div>
