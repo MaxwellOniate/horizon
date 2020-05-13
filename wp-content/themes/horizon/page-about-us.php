@@ -149,33 +149,33 @@ pageBanner();
 
       </div>
       <div class="col-lg-5 py-5">
-        <h3 class="mb-5">Investors Overview</h3>
-        <p>We prize our investors more than everything else. We strive to provide quality services to all our investors on a priority basis. You are invited to join our investors list and enjoy our services. <a href="<?php echo esc_url(site_url('/investors')); ?>">See more...</a></p>
+        <h3 class="mb-5">Clients Overview</h3>
+        <p>We prize our clients more than everything else. We strive to provide quality services to all our clients on a priority basis. You are invited to join our clients list and enjoy our services.</p>
 
-        <ul class="about-investors">
+        <ul class="about-clients">
           <div class="row">
 
             <div class="col-12">
               <li>
-                <img src=" <?php echo get_theme_file_uri('/img/investors/2.jpg'); ?>" alt="Investor" class="img-fluid">
+                <img src=" <?php echo get_theme_file_uri('/img/clients/1.png'); ?>" alt="Client" class="img-fluid">
               </li>
               <li>
-                <img src=" <?php echo get_theme_file_uri('/img/investors/15.jpg'); ?>" alt="Investor" class="img-fluid">
+                <img src=" <?php echo get_theme_file_uri('/img/clients/2.png'); ?>" alt="Client" class="img-fluid">
               </li>
               <li>
-                <img src=" <?php echo get_theme_file_uri('/img/investors/3.jpg'); ?>" alt="Investor" class="img-fluid">
+                <img src=" <?php echo get_theme_file_uri('/img/clients/3.png'); ?>" alt="Client" class="img-fluid">
               </li>
             </div>
 
             <div class="col-12">
               <li>
-                <img src=" <?php echo get_theme_file_uri('/img/investors/4.jpg'); ?>" alt="Investor" class="img-fluid">
+                <img src=" <?php echo get_theme_file_uri('/img/clients/4.png'); ?>" alt="Client" class="img-fluid">
               </li>
               <li>
-                <img src=" <?php echo get_theme_file_uri('/img/investors/5.jpg'); ?>" alt="Investor" class="img-fluid">
+                <img src=" <?php echo get_theme_file_uri('/img/clients/5.png'); ?>" alt="Client" class="img-fluid">
               </li>
               <li>
-                <img src=" <?php echo get_theme_file_uri('/img/investors/11.jpg'); ?>" alt="Investor" class="img-fluid">
+                <img src=" <?php echo get_theme_file_uri('/img/clients/6.png'); ?>" alt="Client" class="img-fluid">
               </li>
             </div>
 

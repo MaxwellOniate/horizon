@@ -445,11 +445,12 @@ p {
 	// INFO
 
 	#about-info {
-		.about-investors {
+		.about-clients {
 			.col-12 {
 				display: flex;
 				li {
 					border-right: 1px dotted #ccc;
+					padding: 20px;
 					&:last-child {
 						border-right: none;
 					}
