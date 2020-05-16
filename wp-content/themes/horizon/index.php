@@ -29,9 +29,9 @@ $container = get_theme_mod('understrap_container_type');
 	<?php get_template_part('global-templates/hero'); ?>
 <?php endif; ?>
 
-<div class="wrapper" id="index-wrapper">
+<div id="index-wrapper" class="py-5">
 
-	<div class="<?php echo esc_attr($container); ?>" id="content" tabindex="-1">
+	<div class="<?php echo esc_attr($container); ?>" id="content">
 
 		<div class="row">
 
