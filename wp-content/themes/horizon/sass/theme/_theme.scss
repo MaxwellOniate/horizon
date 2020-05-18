@@ -473,55 +473,67 @@ p {
 
 // BLOG PAGE
 
-.blog {
-	article {
-		padding: 2rem 0;
-		border-bottom: 1px solid #ccc;
-		&:first-child {
-			padding-top: 0;
-		}
-		&:last-child {
-			border: none;
-		}
+.content-posts {
+	padding: 2rem 0;
+	border-bottom: 1px solid #ccc;
+	&:first-child {
+		padding-top: 0;
+	}
+	&:last-child {
+		border: none;
+	}
 
-		.entry-header {
-			a:hover {
-				color: $main-clr;
-			}
-			.entry-title {
-				margin-bottom: 0;
-				text-transform: none;
-			}
-			.entry-meta {
-				margin-bottom: 1.5rem;
-				span {
-					color: #999;
+	.media {
+		display: flex;
+	}
+
+	.entry-img {
+		flex: 1;
+		margin-right: 1rem;
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.entry-header {
+		a:hover {
+			color: $main-clr;
+		}
+		.entry-title {
+			margin-bottom: 0;
+			text-transform: none;
+		}
+		.entry-meta {
+			margin-bottom: 1.5rem;
+			span {
+				color: #999;
+				&:after {
+					padding: 0 0.5rem;
+					content: "/";
+				}
+				&:last-child {
 					&:after {
-						padding: 0 0.5rem;
-						content: "/";
-					}
-					&:last-child {
-						&:after {
-							content: "";
-						}
+						content: "";
 					}
 				}
 			}
 		}
+	}
 
-		.entry-content {
-			.btn {
-				color: #000;
-				background: none;
-				border: 3px solid #000;
-				border-radius: 3px;
-				padding: 8px 26px;
-				text-transform: uppercase;
-				font-weight: 700;
-				&:hover {
-					background: #000;
-					color: #fff;
-				}
+	.entry-content {
+		.btn {
+			color: #000;
+			background: none;
+			border: 3px solid #000;
+			border-radius: 3px;
+			padding: 8px 26px;
+			text-transform: uppercase;
+			font-weight: 700;
+			&:hover {
+				background: #000;
+				color: #fff;
 			}
 		}
 	}
@@ -826,6 +838,12 @@ p {
 		.breadcrumb {
 			display: flex;
 			justify-content: center;
+		}
+	}
+
+	.content-posts {
+		.media {
+			display: block;
 		}
 	}
 }
