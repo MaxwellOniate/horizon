@@ -169,6 +169,7 @@ p {
 
 #main-nav-container {
 	#main-nav-top {
+		border-bottom: 1px solid #eee;
 		padding-top: 0;
 		padding-bottom: 0;
 		li {
@@ -210,8 +211,6 @@ p {
 	}
 
 	#main-nav-middle {
-		border-top: 1px solid #eee;
-		border-bottom: 1px solid #eee;
 		background: #f9f9f9;
 		padding: 25px 0;
 
@@ -244,27 +243,30 @@ p {
 			}
 		}
 	}
+	#main-nav {
+		border-top: 2px solid #eee;
+		border-bottom: 2px solid #eee;
+		#main-menu {
+			margin: auto;
 
-	#main-menu {
-		margin: auto;
-
-		a {
-			font-family: "Source Sans Pro", sans-serif;
-			font-weight: bold;
-			font-size: 13px;
-			line-height: 22px;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			color: #555;
-			padding: 10px 20px;
-			&:hover {
-				color: #f18052;
-			}
-		}
-
-		.active {
 			a {
-				color: #f18052;
+				font-family: "Source Sans Pro", sans-serif;
+				font-weight: bold;
+				font-size: 13px;
+				line-height: 22px;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				color: #555;
+				padding: 10px 20px;
+				&:hover {
+					color: #f18052;
+				}
+			}
+
+			.active {
+				a {
+					color: #f18052;
+				}
 			}
 		}
 	}
@@ -545,7 +547,6 @@ p {
 
 .page-banner {
 	background: #f9f9f9;
-	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 	padding: 50px 0;
 	.page-title {
