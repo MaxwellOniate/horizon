@@ -1,9 +1,5 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-$main-clr: #ee802f;
-$main-clr-dark: #df762c;
-$main-clr2: #f18052;
-
 body {
 	font-family: "Roboto", sans-serif;
 }
@@ -37,9 +33,9 @@ a {
 
 p {
 	a {
-		color: $main-clr;
+		color: $primary;
 		&:hover {
-			color: $main-clr-dark;
+			color: $primary-dark;
 		}
 	}
 }
@@ -87,7 +83,7 @@ p {
 			letter-spacing: 1px;
 			color: #333;
 			a:hover {
-				color: $main-clr;
+				color: $primary;
 			}
 		}
 		.card-subtitle {
@@ -127,11 +123,11 @@ p {
 }
 
 .bg-main {
-	background: $main-clr;
+	background: $primary;
 }
 
 .bg-main2 {
-	background: $main-clr2;
+	background: $primary2;
 }
 
 .center {
@@ -151,7 +147,7 @@ p {
 	font-size: 14px;
 	height: 40px;
 	line-height: 40px;
-	background-color: $main-clr2;
+	background-color: $primary2;
 	color: #fff;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -361,7 +357,7 @@ p {
 				background-color: #fff;
 			}
 			.nav-link.active {
-				border-top: 3px solid $main-clr;
+				border-top: 3px solid $primary;
 			}
 		}
 		.tab-content {
@@ -476,11 +472,11 @@ p {
 // POSTS
 
 .entry-meta {
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 	span {
 		color: #999;
 		a:hover {
-			color: $main-clr;
+			color: $primary;
 		}
 		&:after {
 			padding: 0 0.5rem;
@@ -501,7 +497,7 @@ p {
 	}
 }
 
-.single-post-img {
+.post-banner {
 	img {
 		object-fit: cover;
 		max-height: 400px;
@@ -527,14 +523,14 @@ p {
 		flex: 1;
 		margin-right: 1rem;
 		img {
-			height: 100%;
+			max-height: 317.25px;
 			width: 100%;
 			object-fit: cover;
 		}
 	}
 
 	a:hover {
-		color: $main-clr;
+		color: $primary;
 	}
 
 	.entry-content {
@@ -551,6 +547,22 @@ p {
 				color: #fff;
 			}
 		}
+	}
+}
+
+.comments-area {
+	.comments-title,
+	.comment-reply-title {
+		text-transform: none;
+		font-weight: normal;
+		margin-bottom: 1.5rem;
+	}
+	.comment-list {
+		.comment {
+			margin-bottom: 1.5rem;
+		}
+	}
+	.comment-respond {
 	}
 }
 
@@ -600,7 +612,7 @@ p {
 
 .c2a2 {
 	padding: 2rem 0;
-	background: $main-clr2;
+	background: $primary2;
 	text-align: center;
 	font-family: "Source Sans Pro", sans-serif;
 	font-size: 1.7rem;
@@ -656,7 +668,7 @@ p {
 				margin: 8px 0;
 				color: #555;
 				i {
-					color: $main-clr;
+					color: $primary;
 				}
 			}
 		}
@@ -701,7 +713,7 @@ p {
 						display: none;
 						transition: all 300ms ease;
 						&:hover {
-							color: $main-clr;
+							color: $primary;
 						}
 					}
 				}
@@ -855,7 +867,7 @@ p {
 		}
 	}
 
-	.content-posts {
+	.posts {
 		.media {
 			display: block;
 		}
@@ -930,12 +942,12 @@ p {
 		#main-nav-top {
 			li.loginout {
 				a {
-					background: $main-clr;
+					background: $primary;
 					color: #fff;
 					width: 100px;
 					&:hover {
 						color: #fff;
-						background: $main-clr-dark;
+						background: $primary-dark;
 					}
 				}
 			}
