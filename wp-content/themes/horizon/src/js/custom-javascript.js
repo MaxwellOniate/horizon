@@ -1,4 +1,16 @@
 (function ($) {
+	// STICKY NAV
+	const navOffset = $("#main-nav").offset().top;
+	$(window).scroll(function () {
+		const scrollY = $(window).scrollTop();
+
+		if (scrollY >= navOffset) {
+			$("#main-nav").addClass("fixed-top");
+		} else {
+			$("#main-nav").removeClass("fixed-top");
+		}
+	});
+
 	// ABOUT PAGE GALLERY
 
 	$(".gallery-bottom").on("click", function (e) {
