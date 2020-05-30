@@ -27,13 +27,6 @@ if (post_password_required()) {
 	<?php // You can start editing here -- including this comment! 
 	?>
 
-	<?php comment_form([
-		'title_reply' => 'Leave a Comment',
-		'logged_in_as' => false,
-		'comment_notes_before' => false,
-	]); // Render comments form. 
-	?>
-
 	<?php if (have_comments()) : ?>
 
 
@@ -136,5 +129,14 @@ if (post_password_required()) {
 		<p class="no-comments"><?php esc_html_e('Comments are closed.', 'understrap'); ?></p>
 
 	<?php endif; ?>
+
+	<?php comment_form([
+		'title_reply' => 'Leave a Comment',
+		'logged_in_as' => false,
+		'comment_notes_before' => false,
+		'cancel_reply_link' => 'Cancel',
+		'cancel_reply_after' => '',
+	]); // Render comments form. 
+	?>
 
 </div><!-- #comments -->

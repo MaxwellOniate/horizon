@@ -553,13 +553,43 @@ p {
 .comments-area {
 	.comments-title,
 	.comment-reply-title {
-		text-transform: none;
-		font-weight: normal;
 		margin-bottom: 1.5rem;
 	}
 	.comment-list {
-		.comment {
+		.comment-body {
+			background: #f9f9f9;
+			padding: 1rem;
+			border-radius: 5px;
 			margin-bottom: 1.5rem;
+			.comment-meta {
+				.comment-author {
+					img {
+						margin-right: 0.5rem;
+					}
+					display: flex;
+					align-items: center;
+					margin-bottom: 0.5rem;
+				}
+				.comment-metadata {
+					font-size: 12px;
+					color: #888;
+				}
+			}
+			.says {
+				display: none;
+			}
+		}
+		.children {
+			margin-left: 3rem;
+			.comment {
+				border: none;
+				margin-top: 1.5rem;
+				margin-bottom: 0;
+				padding-bottom: 0;
+				.children {
+					margin-left: 0;
+				}
+			}
 		}
 	}
 	.comment-respond {
