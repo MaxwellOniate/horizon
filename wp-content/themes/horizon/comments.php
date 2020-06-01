@@ -131,7 +131,7 @@ if (post_password_required()) {
 	<?php endif; ?>
 
 	<?php comment_form([
-		'title_reply' => 'Leave a Comment',
+		'title_reply' => 'Post a Comment',
 		'logged_in_as' => false,
 		'comment_notes_before' => false,
 		'cancel_reply_link' => 'Cancel',

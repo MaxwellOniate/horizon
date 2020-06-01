@@ -10,7 +10,7 @@
 defined('ABSPATH') || exit;
 ?>
 
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class('py-5'); ?> id="post-<?php the_ID(); ?>">
 
 	<div class="post-banner">
 		<?php echo get_the_post_thumbnail($post->ID); ?>

@@ -82,9 +82,6 @@ $container = get_theme_mod('understrap_container_type');
 
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a href="<?php echo esc_url(site_url('/locations')); ?>" class="nav-link">Locations</a>
-							</li>
-							<li class="nav-item">
 								<a href="<?php echo esc_url(site_url('/faqs')); ?>" class="nav-link">FAQs</a>
 							</li>
 							<li class="nav-item">
@@ -93,6 +90,10 @@ $container = get_theme_mod('understrap_container_type');
 
 							<li class="nav-item loginout">
 								<?php wp_loginout(get_permalink()); ?>
+							</li>
+
+							<li class="nav-item register">
+								<a href="<?php echo wp_registration_url(); ?>" class="nav-link">Register</a>
 							</li>
 
 						</ul>

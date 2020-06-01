@@ -596,6 +596,9 @@ p {
 			}
 		}
 	}
+	.comment-respond {
+		padding: 48px 0;
+	}
 }
 
 //*** TEMPLATE PARTS
@@ -980,6 +983,16 @@ p {
 					&:hover {
 						color: #fff;
 						background: $primary-dark;
+					}
+				}
+			}
+			li.register {
+				a {
+					background: #000;
+					color: #fff;
+					width: 100px;
+					&:hover {
+						background: #444;
 					}
 				}
 			}

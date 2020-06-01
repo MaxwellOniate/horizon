@@ -12,14 +12,10 @@ defined('ABSPATH') || exit;
 get_header();
 $container = get_theme_mod('understrap_container_type');
 
-pageBanner([
-	'title' => 'Blog',
-	'subtitle' => 'Keep up with our latest news.'
-]);
 ?>
 
 
-<div class="py-5" id="single-wrapper">
+<div id="single-wrapper">
 
 	<div class="<?php echo esc_attr($container); ?>" id="content">
 
