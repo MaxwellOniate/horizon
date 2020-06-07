@@ -149,16 +149,16 @@
       </div>
 
       <div class="col-md-4">
-        <form class="info-form">
+        <form class="info-form custom-form">
           <h3>Quick Quote Form</h3>
           <div class="form-group">
-            <input type="text" class="form-control form-control-custom" placeholder="Full Name">
+            <input type="text" class="form-control" placeholder="Full Name">
           </div>
           <div class="form-group">
-            <input type="email" class="form-control form-control-custom" placeholder="Email">
+            <input type="email" class="form-control" placeholder="Email">
           </div>
           <div class="form-group">
-            <textarea class="form-control form-control-custom" placeholder="Message"></textarea>
+            <textarea class="form-control" placeholder="Message"></textarea>
           </div>
           <button class="main-btn">Send Message</button>
         </form>

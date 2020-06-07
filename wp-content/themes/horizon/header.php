@@ -95,7 +95,6 @@ $container = get_theme_mod('understrap_container_type');
 							<li class="nav-item register">
 								<a href="<?php echo wp_registration_url(); ?>" class="nav-link">Register</a>
 							</li>
-
 						</ul>
 
 						<?php if ('container' === $container) : ?>

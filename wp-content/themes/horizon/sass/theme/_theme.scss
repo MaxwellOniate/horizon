@@ -106,14 +106,6 @@ p {
 	}
 }
 
-.form-control-custom {
-	padding: 8px 14px;
-	line-height: 1.42857143;
-	border: 2px solid #ddd;
-	border-radius: 0;
-	transition: border-color ease-in-out 0.15s;
-}
-
 .bg-f9f9f9 {
 	background: #f9f9f9;
 }
@@ -137,6 +129,54 @@ p {
 	align-items: center;
 }
 
+// WP FORMS
+
+div.wpforms-container-full .wpforms-form input[type="date"],
+div.wpforms-container-full .wpforms-form input[type="datetime"],
+div.wpforms-container-full .wpforms-form input[type="datetime-local"],
+div.wpforms-container-full .wpforms-form input[type="email"],
+div.wpforms-container-full .wpforms-form input[type="month"],
+div.wpforms-container-full .wpforms-form input[type="number"],
+div.wpforms-container-full .wpforms-form input[type="password"],
+div.wpforms-container-full .wpforms-form input[type="tel"],
+div.wpforms-container-full .wpforms-form input[type="text"],
+div.wpforms-container-full .wpforms-form input[type="time"],
+div.wpforms-container-full .wpforms-form input[type="url"],
+div.wpforms-container-full .wpforms-form input[type="week"],
+div.wpforms-container-full .wpforms-form select,
+div.wpforms-container-full .wpforms-form textarea,
+.custom-form .form-control,
+.comment-form .form-control {
+	padding: 8px 14px;
+	line-height: 1.42857143;
+	border: 2px solid #ddd;
+	border-radius: 0;
+	transition: border-color ease-in-out 0.15s;
+	&:focus {
+		color: #495057;
+		background-color: #fff;
+		border-color: #f8c8a5;
+		outline: 0;
+		-webkit-box-shadow: 0 0 0 0.2rem rgba(238, 128, 47, 0.25);
+		box-shadow: 0 0 0 0.2rem rgba(238, 128, 47, 0.25);
+	}
+}
+
+div.wpforms-container-full .wpforms-form input[type="submit"]:hover,
+div.wpforms-container-full .wpforms-form input[type="submit"]:focus,
+div.wpforms-container-full .wpforms-form input[type="submit"]:active,
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover,
+div.wpforms-container-full .wpforms-form button[type="submit"]:focus,
+div.wpforms-container-full .wpforms-form button[type="submit"]:active,
+div.wpforms-container-full .wpforms-form .wpforms-page-button:hover,
+div.wpforms-container-full .wpforms-form .wpforms-page-button:active,
+div.wpforms-container-full
+	.wpforms-form
+	.wpforms-page-button:focus
+	div.wpforms-container-full
+	.wpforms-form
+	input[type="submit"],
+div.wpforms-container-full .wpforms-form button[type="submit"],
 .main-btn {
 	display: inline-block;
 	position: relative;

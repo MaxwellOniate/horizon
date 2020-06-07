@@ -136,6 +136,7 @@ if (post_password_required()) {
 		'comment_notes_before' => false,
 		'cancel_reply_link' => 'Cancel',
 		'cancel_reply_after' => '',
+		'class_submit' => 'main-btn'
 	]); // Render comments form. 
 	?>
 
