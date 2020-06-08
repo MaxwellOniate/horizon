@@ -176,78 +176,73 @@
 
 <!-- RECENT BLOGS -->
 
-<section id="recent-blogs" class="py-5">
-  <div class="container">
-    <h2 class="mb-5">Recent Blogs</h2>
-    <div class="row">
+<?php
 
-      <div class="col-md-4">
-        <div class="card card-min">
-          <a href="#">
-            <img src="<?php echo get_theme_file_uri('/img/blog/5.jpg'); ?>" alt="Construction" class="card-img-top">
-          </a>
-          <div class="card-body">
-            <h3 class="card-title">
-              <a href="#">
-                Upcoming Projects in Australia
+$homeBlogsQuery = new WP_Query([
+  'post_type' => 'post',
+  'posts_per_page' => 3
+]);
+
+if ($homeBlogsQuery->have_posts()) {
+?>
+
+  <section id="recent-blogs" class="py-5">
+    <div class="container">
+      <h2 class="mb-5">Recent Blogs</h2>
+      <div class="row">
+
+        <?php
+        while ($homeBlogsQuery->have_posts()) {
+          $homeBlogsQuery->the_post();
+        ?>
+
+          <div class="col-md-4">
+            <div class="card card-min">
+
+              <a href="<?php the_permalink(); ?>">
+                <div class="card-post-thumbnail">
+
+                  <?php
+                  if (has_post_thumbnail()) {
+                    the_post_thumbnail();
+                  } else {
+                  ?>
+                    <img src="<?php echo get_theme_file_uri('/img/no-img.png'); ?>" alt="Horizon">
+                  <?php } ?>
+                </div>
               </a>
-            </h3>
-            <p class="card-meta">
-              February 13th 2012
-            </p>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sapiente pariatur recusandae fugit perferendis itaque impedit a quis eius at.</p>
+
+              <div class="card-body">
+                <h3 class="card-title">
+                  <a href="<?php the_permalink(); ?>">
+                    <?php the_title(); ?>
+                  </a>
+                </h3>
+                <p class="card-meta">
+                  <?php the_date(); ?>
+                </p>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sapiente pariatur recusandae fugit perferendis itaque impedit a quis eius at.</p>
+              </div>
+            </div>
           </div>
-        </div>
+
+        <?php
+        }
+        ?>
+
       </div>
-
-      <div class="col-md-4">
-        <div class="card card-min">
-          <a href="#">
-            <img src="<?php echo get_theme_file_uri('/img/blog/4.jpg'); ?>" alt="Construction" class="card-img-top">
-          </a>
-          <div class="card-body">
-            <h3 class="card-title">
-              <a href="#">
-                Global Excellence Construction Award
-              </a>
-            </h3>
-            <p class="card-meta">
-              February 24th 2014
-            </p>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sapiente pariatur recusandae fugit perferendis itaque impedit a quis eius at.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4">
-        <div class="card card-min">
-          <a href="#">
-            <img src="<?php echo get_theme_file_uri('/img/blog/3.jpg'); ?>" alt="Construction" class="card-img-top">
-          </a>
-          <div class="card-body">
-            <h3 class="card-title">
-              <a href="#">
-                Expensive Real Estate
-              </a>
-            </h3>
-            <p class="card-meta">
-              May 5th 2014
-            </p>
-            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sapiente pariatur recusandae fugit perferendis itaque impedit a quis eius at.</p>
-          </div>
-        </div>
-      </div>
-
-
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- DIVIDER -->
-<div class="container">
-  <hr>
-</div>
+  <!-- DIVIDER -->
+  <div class="container">
+    <hr>
+  </div>
+<?php
+}
+?>
+
+
 
 <!-- TRUST POINTS -->
 
