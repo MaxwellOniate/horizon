@@ -221,7 +221,9 @@ if ($homeBlogsQuery->have_posts()) {
                 <p class="card-meta">
                   <?php the_date(); ?>
                 </p>
-                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae sapiente pariatur recusandae fugit perferendis itaque impedit a quis eius at.</p>
+                <p class="card-text">
+                  <?php echo get_the_excerpt(); ?>
+                </p>
               </div>
             </div>
           </div>

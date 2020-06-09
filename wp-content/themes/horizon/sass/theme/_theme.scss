@@ -136,6 +136,20 @@ p {
 	align-items: center;
 }
 
+.btn.btn-secondary.understrap-read-more-link {
+	color: #000;
+	background: none;
+	border: 3px solid #000;
+	border-radius: 3px;
+	padding: 8px 26px;
+	text-transform: uppercase;
+	font-weight: 700;
+	&:hover {
+		background: #000;
+		color: #fff;
+	}
+}
+
 // WP FORMS
 
 div.wpforms-container-full .wpforms-form input[type="date"],
@@ -436,6 +450,9 @@ div.wpforms-container-full .wpforms-form button[type="submit"],
 				text-transform: none;
 				letter-spacing: 0px;
 			}
+			.btn.btn-secondary.understrap-read-more-link {
+				display: none;
+			}
 		}
 	}
 }
@@ -582,22 +599,6 @@ div.wpforms-container-full .wpforms-form button[type="submit"],
 
 	a:hover {
 		color: $primary;
-	}
-
-	.entry-content {
-		.btn {
-			color: #000;
-			background: none;
-			border: 3px solid #000;
-			border-radius: 3px;
-			padding: 8px 26px;
-			text-transform: uppercase;
-			font-weight: 700;
-			&:hover {
-				background: #000;
-				color: #fff;
-			}
-		}
 	}
 }
 
