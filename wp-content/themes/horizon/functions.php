@@ -31,6 +31,8 @@ foreach ($understrap_includes as $file) {
 	require_once get_template_directory() . '/inc' . $file;
 }
 
+// ACTIONS & FILTERS
+
 function horizon_enqueue_scripts()
 {
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
@@ -57,6 +59,19 @@ function custom_excerpt_length($length)
 
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
+function project_archive_display_count($query)
+{
+	if (is_post_type_archive('project')) {
+		$query->set('posts_per_page', 8);
+		$query->set('orderby', 'date');
+		$query->set('order', 'DESC');
+		return;
+	}
+}
+
+add_action('pre_get_posts', 'project_archive_display_count');
+
+// TEMPLATE FUNCTIONS
 
 function pageBanner($args = NULL)
 {

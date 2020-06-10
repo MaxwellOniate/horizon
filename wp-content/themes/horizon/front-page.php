@@ -85,19 +85,36 @@
 
 <!-- PROJECTS -->
 
-<section class="projects">
+<?php
 
-  <h2 class="projects-heading">Featured Projects</h2>
+$projectsQuery = new WP_Query([
+  'post_type' => 'project',
+  'posts_per_page' => 4,
+]);
 
-  <div class="projects-container">
-    <div class="row no-gutters">
+if ($projectsQuery->have_posts()) {
+?>
+  <section class="projects">
 
-      <?php get_template_part('template-parts/content', 'projects'); ?>
+    <h2 class="projects-heading">Featured Projects</h2>
 
+    <div class="projects-container">
+      <div class="row no-gutters">
+
+        <?php
+        while ($projectsQuery->have_posts()) {
+          $projectsQuery->the_post();
+          get_template_part('template-parts/content', 'project');
+        }
+        ?>
+
+      </div>
     </div>
-  </div>
 
-</section>
+  </section>
+<?php } ?>
+
+
 
 <!-- CALL TO ACTION 2 -->
 
@@ -178,6 +195,7 @@
 
 <?php
 
+wp_reset_query();
 $homeBlogsQuery = new WP_Query([
   'post_type' => 'post',
   'posts_per_page' => 3
