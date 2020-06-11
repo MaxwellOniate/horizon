@@ -144,7 +144,7 @@ $container = get_theme_mod('understrap_container_type');
 									<a href="#">Terms of Use</a>
 								</li>
 								<li class="breadcrumb-item">
-									<a href="#">Privacy Policy</a>
+									<a href="<?php echo esc_url(site_url('/privacy-policy')); ?>">Privacy Policy</a>
 								</li>
 							</ol>
 						</nav>
@@ -157,22 +157,22 @@ $container = get_theme_mod('understrap_container_type');
 					<nav aria-label="breadcrumb">
 						<ol class="breadcrumb breadcrumb-min">
 							<li class="breadcrumb-item">
-								<a href="#">Home</a>
+								<a href="<?php echo esc_url(home_url('/')); ?>">Home</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#">About Us</a>
+								<a href="<?php echo esc_url(site_url('/about-us')); ?>">About Us</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#">Team</a>
+								<a href="<?php echo esc_url(site_url('/projects')); ?>">Projects</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#">Clients</a>
+								<a href="<?php echo esc_url(site_url('/investors')); ?>">Investors</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#">FAQs</a>
+								<a href="<?php echo esc_url(site_url('/blog')); ?>">Blog</a>
 							</li>
 							<li class="breadcrumb-item">
-								<a href="#">Contact</a>
+								<a href="<?php echo esc_url(site_url('/contact')); ?>">Contact</a>
 							</li>
 						</ol>
 					</nav>
