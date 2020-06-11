@@ -22,7 +22,13 @@ defined('ABSPATH') || exit;
 
 		the_title('<h1 class="entry-title">', '</h1>');
 
-		displayPostMeta();
+		if ('project' == get_post_type()) {
+		?>
+			<p class="text-secondary"><?php the_field('location') ?></p>
+		<?php
+		} else {
+			displayPostMeta();
+		}
 
 		?>
 
