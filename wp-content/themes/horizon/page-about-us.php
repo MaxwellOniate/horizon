@@ -99,7 +99,7 @@ pageBanner();
       <img src="<?php echo get_theme_file_uri('/img/services/parallax.jpg'); ?>" alt="Construction workers lifting a piece of wooden foundation." class="img-fluid benefits-side-img">
     </div>
     <div class="col-lg-8">
-      <?php get_template_part('template-parts/content', 'benefits-2col'); ?>
+      <?php get_template_part('page-templates/benefits2'); ?>
     </div>
   </div>
 </section>
@@ -182,12 +182,13 @@ pageBanner();
 
 <?php
 
-// CALL TO ACTION 2
+// CALL TO ACTION 
 
-get_template_part('template-parts/content', 'c2a2');
+get_template_part('page-templates/c2a');
 
 // TRUST POINTS
 
-get_template_part('template-parts/content', 'trust-points');
+get_template_part('page-templates/trust-points');
+
 
 get_footer();

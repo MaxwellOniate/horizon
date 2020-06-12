@@ -14,9 +14,9 @@
   </div>
 </section>
 
-<!-- CALL TO ACTION -->
+<!-- CALL TO ACTION 2 -->
 
-<?php get_template_part('template-parts/content', 'c2a'); ?>
+<?php get_template_part('page-templates/c2a2'); ?>
 
 <!-- SERVICES -->
 
@@ -81,7 +81,7 @@
 
 <!-- BENEFITS -->
 
-<?php get_template_part('template-parts/content', 'benefits'); ?>
+<?php get_template_part('page-templates/benefits'); ?>
 
 <!-- PROJECTS -->
 
@@ -104,7 +104,7 @@ if ($projectsQuery->have_posts()) {
         <?php
         while ($projectsQuery->have_posts()) {
           $projectsQuery->the_post();
-          get_template_part('template-parts/content', 'project');
+          get_template_part('loop-templates/content', 'project');
         }
         ?>
 
@@ -114,11 +114,9 @@ if ($projectsQuery->have_posts()) {
   </section>
 <?php } ?>
 
+<!-- CALL TO ACTION -->
 
-
-<!-- CALL TO ACTION 2 -->
-
-<?php get_template_part('template-parts/content', 'c2a2'); ?>
+<?php get_template_part('page-templates/c2a'); ?>
 
 <!-- INFO -->
 
@@ -266,7 +264,7 @@ if ($homeBlogsQuery->have_posts()) {
 
 <!-- TRUST POINTS -->
 
-<?php get_template_part('template-parts/content', 'trust-points'); ?>
+<?php get_template_part('page-templates/trust-points'); ?>
 
 
 <?php get_footer(); ?>

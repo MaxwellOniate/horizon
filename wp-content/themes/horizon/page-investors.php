@@ -79,12 +79,10 @@ pageBanner();
   </div>
 </section>
 
-
-
 <?php
 
-// CALL TO ACTION 2
+// CALL TO ACTION
 
-get_template_part('template-parts/content', 'c2a2');
+get_template_part('page-templates/c2a');
 
 get_footer();

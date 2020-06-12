@@ -19,7 +19,7 @@ pageBanner([
 
       while (have_posts()) {
         the_post();
-        get_template_part('template-parts/content', 'project');
+        get_template_part('loop-templates/content', 'project');
       }
 
       ?>
@@ -39,8 +39,8 @@ pageBanner([
 
 <?php
 
-// CALL TO ACTION 2
+// CALL TO ACTION
 
-get_template_part('template-parts/content', 'c2a2');
+get_template_part('page-templates/c2a');
 
 get_footer();
