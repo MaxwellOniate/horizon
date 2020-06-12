@@ -7161,9 +7161,17 @@
     const scrollY = $(window).scrollTop();
 
     if (scrollY >= navOffset) {
-      $("#main-nav").addClass("fixed-top");
+      if ($("body").hasClass("logged-in")) {
+        $("#main-nav").addClass("fixed-top under-wpadminbar");
+      } else {
+        $("#main-nav").addClass("fixed-top");
+      }
     } else {
-      $("#main-nav").removeClass("fixed-top");
+      if ($("body").hasClass("logged-in")) {
+        $("#main-nav").removeClass("fixed-top under-wpadminbar");
+      } else {
+        $("#main-nav").removeClass("fixed-top");
+      }
     }
   }); // ABOUT PAGE GALLERY
 

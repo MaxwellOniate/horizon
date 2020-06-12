@@ -37,14 +37,12 @@ function horizon_enqueue_scripts()
 {
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 }
-
 add_action('wp_enqueue_scripts', 'horizon_enqueue_scripts');
 
 function horizon_nav_menus()
 {
 	register_nav_menu('footerBottomBar', 'Footer Bottom Bar');
 }
-
 add_action('after_setup_theme', 'horizon_nav_menus');
 
 function add_slug_body_class($classes)
@@ -55,7 +53,6 @@ function add_slug_body_class($classes)
 	}
 	return $classes;
 }
-
 add_filter('body_class', 'add_slug_body_class');
 
 
@@ -63,7 +60,6 @@ function custom_excerpt_length($length)
 {
 	return 30;
 }
-
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 function project_archive_display_count($query)
@@ -75,7 +71,6 @@ function project_archive_display_count($query)
 		return;
 	}
 }
-
 add_action('pre_get_posts', 'project_archive_display_count');
 
 // TEMPLATE FUNCTIONS

@@ -56,6 +56,10 @@ p {
 	font-size: 18px;
 }
 
+.under-wpadminbar {
+	margin-top: 32px;
+}
+
 .navbar-expand > .container {
 	padding-left: 15px !important;
 	padding-right: 15px !important;
@@ -971,6 +975,12 @@ div.wpforms-container-full .wpforms-form button[type="submit"],
 	}
 }
 
+@media (max-width: 782px) {
+	.under-wpadminbar {
+		margin-top: 46px;
+	}
+}
+
 @media (max-width: 768px) {
 	#main-nav-top {
 		.top-social {
@@ -1002,6 +1012,12 @@ div.wpforms-container-full .wpforms-form button[type="submit"],
 				}
 			}
 		}
+	}
+}
+
+@media (max-width: 600px) {
+	.under-wpadminbar {
+		margin-top: 0;
 	}
 }
 
