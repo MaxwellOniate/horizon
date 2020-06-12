@@ -154,32 +154,18 @@ $container = get_theme_mod('understrap_container_type');
 				</div>
 
 				<div class="d-none col-lg-6 d-lg-flex justify-content-end">
-					<nav aria-label="breadcrumb">
-						<ol class="breadcrumb breadcrumb-min">
-							<li class="breadcrumb-item">
-								<a href="<?php echo esc_url(home_url('/')); ?>">Home</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="<?php echo esc_url(site_url('/about-us')); ?>">About Us</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="<?php echo esc_url(site_url('/projects')); ?>">Projects</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="<?php echo esc_url(site_url('/investors')); ?>">Investors</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="<?php echo esc_url(site_url('/blog')); ?>">Blog</a>
-							</li>
-							<li class="breadcrumb-item">
-								<a href="<?php echo esc_url(site_url('/contact')); ?>">Contact</a>
-							</li>
-						</ol>
-					</nav>
+
+					<?php wp_nav_menu([
+						'theme_location' => 'footerBottomBar',
+						'menu' => 'Footer Bottom Bar Navigation',
+						'container' => 'nav',
+						'items_wrap' => '<ol class="%2$s">%3$s</ol>',
+						'menu_class' => 'breadcrumb breadcrumb-min',
+					]); ?>
+
 				</div>
 
 			</div>
-
 		</div>
 	</div>
 </footer>

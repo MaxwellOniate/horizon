@@ -40,6 +40,13 @@ function horizon_enqueue_scripts()
 
 add_action('wp_enqueue_scripts', 'horizon_enqueue_scripts');
 
+function horizon_nav_menus()
+{
+	register_nav_menu('footerBottomBar', 'Footer Bottom Bar');
+}
+
+add_action('after_setup_theme', 'horizon_nav_menus');
+
 function add_slug_body_class($classes)
 {
 	global $post;
