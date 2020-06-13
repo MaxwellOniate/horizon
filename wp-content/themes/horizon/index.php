@@ -17,10 +17,7 @@ defined('ABSPATH') || exit;
 
 get_header();
 
-pageBanner([
-	'title' => 'Blog',
-	'subtitle' => 'Keep up with our latest news.'
-]);
+pageBanner(['subtitle' => 'Keep up with our latest news.']);
 
 $container = get_theme_mod('understrap_container_type');
 ?>

@@ -110,9 +110,7 @@ add_action('login_enqueue_scripts', 'loginCSS');
 
 function pageBanner($args = NULL)
 {
-	if (!$args['title']) {
-		$args['title'] = esc_html(get_the_title());
-	}
+
 	if (!$args['subtitle']) {
 		$args['subtitle'] = get_field('page_banner_subtitle');
 	}
@@ -121,7 +119,15 @@ function pageBanner($args = NULL)
 	<header class="page-banner">
 		<div class="container">
 			<h1 class="page-title">
-				<?php echo $args['title'] ?>
+				<?php
+
+				if (!$args['title']) {
+					single_post_title();
+				} else {
+					echo $args['title'];
+				}
+
+				?>
 			</h1>
 			<span class="page-subtitle">
 				<?php echo $args['subtitle']; ?>
