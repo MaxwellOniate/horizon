@@ -31,19 +31,21 @@ foreach ($understrap_includes as $file) {
 	require_once get_template_directory() . '/inc' . $file;
 }
 
-// ACTIONS & FILTERS
-
 function horizon_enqueue_scripts()
 {
 	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 }
 add_action('wp_enqueue_scripts', 'horizon_enqueue_scripts');
 
+// NAV MENUS
+
 function horizon_nav_menus()
 {
 	register_nav_menu('footerBottomBar', 'Footer Bottom Bar');
 }
 add_action('after_setup_theme', 'horizon_nav_menus');
+
+// ADD SLUG TO THE BODY CLASS
 
 function add_slug_body_class($classes)
 {
@@ -55,12 +57,15 @@ function add_slug_body_class($classes)
 }
 add_filter('body_class', 'add_slug_body_class');
 
+// CUSTOM EXCERPT LENGTH
 
 function custom_excerpt_length($length)
 {
 	return 30;
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+// PROJECT ARCHIVE DISPLAY COUNT
 
 function project_archive_display_count($query)
 {
@@ -72,6 +77,34 @@ function project_archive_display_count($query)
 	}
 }
 add_action('pre_get_posts', 'project_archive_display_count');
+
+// LOGIN PAGE CUSTOMIZATION
+
+function headerURL()
+{
+	return esc_url(site_url('/'));
+}
+add_filter('login_headerurl', 'headerURL');
+
+function loginLogo()
+{
+	return get_bloginfo('name');
+}
+add_action('login_headertitle', 'loginLogo');
+
+function loginCSS()
+{
+	// Get the theme data.
+	$the_theme     = wp_get_theme();
+	$theme_version = $the_theme->get('Version');
+
+	$css_version = $theme_version . '.' . filemtime(get_template_directory() . '/css/theme.min.css');
+	wp_enqueue_style('understrap-styles', get_template_directory_uri() . '/css/theme.min.css', array(), $css_version);
+
+	wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+}
+
+add_action('login_enqueue_scripts', 'loginCSS');
 
 // TEMPLATE FUNCTIONS
 
