@@ -3,15 +3,20 @@
 <!-- SHOWCASE -->
 
 <section id="showcase" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/2.jpg'); ?>')">
-  <div class="container">
-    <div class="card">
-      <div class="card-body">
-        <h1>Welcome to Horizon</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus dolorum maxime nisi soluta iusto dicta laudantium nostrum voluptas alias.</p>
+  <?php
+  if (get_field('card_heading') && get_field('card_text')) {
+  ?>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h1><?php echo get_field('card_heading'); ?></h1>
+          <p><?php echo get_field('card_text'); ?></p>
+        </div>
       </div>
     </div>
-
-  </div>
+  <?php
+  }
+  ?>
 </section>
 
 <!-- CALL TO ACTION 2 -->
