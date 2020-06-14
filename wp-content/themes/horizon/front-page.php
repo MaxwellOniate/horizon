@@ -204,7 +204,7 @@ $homeBlogsQuery = new WP_Query([
   'posts_per_page' => 3
 ]);
 
-if ($homeBlogsQuery->have_posts()) {
+if ($homeBlogsQuery->have_posts() && $homeBlogsQuery->post_count >= 3) {
 ?>
 
   <section id="recent-blogs" class="py-5">
