@@ -142,7 +142,7 @@ function displayPostMeta()
 	if ('post' == get_post_type()) : ?>
 
 		<div class="entry-meta">
-			<span><i class="fa fa-calendar"></i> <?php the_date(); ?></span>
+			<span><i class="fa fa-calendar"></i> <?php the_time('F j, Y'); ?></span>
 
 			<span>
 				<i class="fa fa-user"></i>
