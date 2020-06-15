@@ -2,7 +2,8 @@
 
 <!-- SHOWCASE -->
 
-<section id="showcase" style="background-image:url('<?php echo get_theme_file_uri('/img/slider/2.jpg'); ?>')">
+<section id="showcase" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>')">
+
   <?php
   if (get_field('card_heading') && get_field('card_text')) {
   ?>
