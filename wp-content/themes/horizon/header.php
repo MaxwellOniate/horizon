@@ -89,7 +89,7 @@ $container = get_theme_mod('understrap_container_type');
 							</li>
 
 							<li class="nav-item loginout">
-								<?php wp_loginout(get_permalink()); ?>
+								<?php wp_loginout($_SERVER['REQUEST_URI']); ?>
 							</li>
 
 							<li class="nav-item register">
