@@ -91,13 +91,12 @@
 <!-- PROJECTS -->
 
 <?php
-
 $projectsQuery = new WP_Query([
   'post_type' => 'project',
   'posts_per_page' => 4,
 ]);
 
-if ($projectsQuery->have_posts()) {
+if ($projectsQuery->have_posts()  && $projectsQuery->post_count >= 4) {
 ?>
   <section class="projects">
 
