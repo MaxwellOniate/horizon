@@ -110,31 +110,7 @@ add_action('login_enqueue_scripts', 'loginCSS');
 
 function pageBanner($args = NULL)
 {
-
-	if (!$args['subtitle']) {
-		$args['subtitle'] = get_field('page_banner_subtitle');
-	}
-
-?>
-	<header class="page-banner">
-		<div class="container">
-			<h1 class="page-title">
-				<?php
-
-				if (!$args['title']) {
-					single_post_title();
-				} else {
-					echo $args['title'];
-				}
-
-				?>
-			</h1>
-			<span class="page-subtitle">
-				<?php echo $args['subtitle']; ?>
-			</span>
-		</div>
-	</header>
-	<?php
+	include('page-templates/page-banner.php');
 }
 
 function displayPostMeta()
@@ -152,7 +128,7 @@ function displayPostMeta()
 			<span><i class="fa fa-folder-open"></i> <?php the_category(", "); ?></span>
 
 			<span>
-				<a href="<?php echo get_comments_link(); ?>">
+				<a href="<?php echo esc_url(get_comments_link()); ?>">
 					<i class="fa fa-comment"></i>
 					<?php echo get_comments_number(); ?>
 				</a>
