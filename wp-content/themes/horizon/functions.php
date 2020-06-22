@@ -115,26 +115,7 @@ function pageBanner($args = NULL)
 
 function displayPostMeta()
 {
-	if ('post' == get_post_type()) : ?>
-
-		<div class="entry-meta">
-			<span><i class="fa fa-calendar"></i> <?php the_time('F j, Y'); ?></span>
-
-			<span>
-				<i class="fa fa-user"></i>
-				<?php the_author_posts_link(); ?>
-			</span>
-
-			<span><i class="fa fa-folder-open"></i> <?php the_category(", "); ?></span>
-
-			<span>
-				<a href="<?php echo esc_url(get_comments_link()); ?>">
-					<i class="fa fa-comment"></i>
-					<?php echo get_comments_number(); ?>
-				</a>
-			</span>
-
-		</div><!-- .entry-meta -->
-
-<?php endif;
+	if ('post' == get_post_type()) {
+		get_template_part('page-templates/post-meta');
+	}
 }
