@@ -37,6 +37,7 @@ function horizon_enqueue_scripts()
 }
 add_action('wp_enqueue_scripts', 'horizon_enqueue_scripts');
 
+
 // NAV MENUS
 
 function horizon_nav_menus()
@@ -45,25 +46,6 @@ function horizon_nav_menus()
 }
 add_action('after_setup_theme', 'horizon_nav_menus');
 
-// ADD SLUG TO THE BODY CLASS
-
-function add_slug_body_class($classes)
-{
-	global $post;
-	if (isset($post)) {
-		$classes[] = $post->post_type . '-' . $post->post_name;
-	}
-	return $classes;
-}
-add_filter('body_class', 'add_slug_body_class');
-
-// CUSTOM EXCERPT LENGTH
-
-function custom_excerpt_length($length)
-{
-	return 30;
-}
-add_filter('excerpt_length', 'custom_excerpt_length', 999);
 
 // PROJECT ARCHIVE DISPLAY COUNT
 
@@ -78,19 +60,17 @@ function project_archive_display_count($query)
 }
 add_action('pre_get_posts', 'project_archive_display_count');
 
-// LOGIN PAGE CUSTOMIZATION
 
-function headerURL()
-{
-	return esc_url(site_url('/'));
-}
-add_filter('login_headerurl', 'headerURL');
+// LOGIN LOGO
 
 function loginLogo()
 {
 	return get_bloginfo('name');
 }
 add_action('login_headertitle', 'loginLogo');
+
+
+// LOGIN CSS
 
 function loginCSS()
 {
@@ -105,6 +85,47 @@ function loginCSS()
 }
 
 add_action('login_enqueue_scripts', 'loginCSS');
+
+
+// LOGIN HEADER URL
+
+function headerURL()
+{
+	return esc_url(site_url('/'));
+}
+add_filter('login_headerurl', 'headerURL');
+
+
+// ADD SLUG TO THE BODY CLASS
+
+function horizon_body_classes($classes)
+{
+	global $post;
+	if (isset($post)) {
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+	return $classes;
+}
+add_filter('body_class', 'horizon_body_classes');
+
+
+// CUSTOM EXCERPT LENGTH
+
+function horizon_excerpt_length($length)
+{
+	return 30;
+}
+add_filter('excerpt_length', 'horizon_excerpt_length');
+
+
+// CUSTOM EXCERPT MORE
+
+function horizon_excerpt_more($text)
+{
+	return str_replace(' [...]', '...', $text);
+}
+add_filter('get_the_excerpt', 'horizon_excerpt_more');
+
 
 // TEMPLATE FUNCTIONS
 
